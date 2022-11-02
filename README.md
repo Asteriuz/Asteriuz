@@ -10,7 +10,7 @@
   <img align="center" alt="Asteriuz-HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
   <img align="center" alt="Asteriuz-CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
   <img align="center" alt="Asteriuz-Python" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
-  <img align="right" alt="Asteriuz-pic" height="150" style="border-radius:50px;" src="https://media.discordapp.net/attachments/1025359092258185226/1025359283266797658/Picrew.png">
+  <img align="right" alt="Asteriuz-pic" height="150" style="border-radius:50px;" src="https://media.discordapp.net/attachments/1025359092258185226/1037171154626019479/Luffy.jpeg?width=683&height=701">
 </div>
   
   ##
