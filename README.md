@@ -29,13 +29,4 @@
   
 </div>
 
-<<<<<<< HEAD
 ![snake svg](https://github.com/Asteriuz/Asteriuz/blob/output/github-contribution-grid-snake.svg)
-=======
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/Asteriuz/Asteriuz/blob/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://github.com/Asteriuz/Asteriuz/blob/output/github-contribution-grid-snake.svg" />
-  <img alt="github-snake" src="github-snake.svg" />
-</picture>
->>>>>>> dea9b454106f3f14661ac773ded3739cf1e535a4
