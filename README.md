@@ -1,8 +1,8 @@
 ## Bom dia! Eu sou Asteriuz!
 <div align="center">
   <a href="https://github.com/asteriuz">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=asteriuz&show_icons=true&theme=omni&include_all_commits=true&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=asteriuz&layout=compact&langs_count=7&theme=omni"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=asteriuz&show_icons=true&theme=omni&include_all_commits=true&count_private=true&bg_color=12131d&title_color=ff79c6&icon_color=43ef7b&locale=pt-BR&hide_border=true"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=asteriuz&layout=compact&langs_count=7&theme=omni&bg_color=12131d&title_color=ff79c6&icon_color=43ef7b&locale=pt-BR&hide_border=true"/>
 </div>
 
 <div style="display: inline_block"><br>
