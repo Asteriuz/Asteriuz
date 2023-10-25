@@ -6,9 +6,9 @@
   <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=asteriuz&layout=compact&langs_count=7&theme=omni&bg_color=12131d&title_color=ff79c6&icon_color=43ef7b&locale=pt-BR&hide_border=true"/>
 </div>
 
-<div style="display: flex; align-items: flex-end; justify-content: space-between;"><br>
-  <div id="certificados">
+<div float="left">
     <h3>Certificados (clique no ícone para abri-los):</h3>
+  <img align="right" alt="Asteriuz-pic" height="200" style="border-radius:50px;" src="img/HeadShotV3.jpg"/>
     <h4>Programação</h4>
     <a href="Certificados/Python.pdf"><img align="center" alt="Python" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"></a>&nbsp;
     <a href="Certificados/Dart.pdf"><img align="center" alt="Dart" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg"></a>&nbsp;
@@ -25,10 +25,8 @@
     <a href="Certificados/Premiere.pdf"><img align="center" alt="Premiere" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/premierepro/premierepro-original.svg"></a>&nbsp;
     <a href="Certificados/AfterEffects.pdf"><img align="center" alt="AfterEffects" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/aftereffects/aftereffects-original.svg"></a>&nbsp;
     <a href="Certificados/AdobeXD.pdf"><img align="center" alt="AdobeXD" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xd/xd-line.svg"></a>
-    <img align="center" alt="Figma" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg">&nbsp;
-  </div>
+    <img align="center" alt="Figma" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg">
   
-  <img align="right" alt="Asteriuz-pic" height="200" style="border-radius:50px;" src="img/HeadShotV3.jpg"/>
 <br/>
 
 </div>
