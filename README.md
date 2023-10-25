@@ -8,7 +8,7 @@
 
 <div float="left">
     <h3>Certificados (clique no ícone para abri-los):</h3>
-  <img align="right" alt="Asteriuz-pic" height="200" style="border-radius:50px;" src="img/HeadShotV3.jpg"/>
+  <img align="right" alt="Asteriuz-pic" height="200" style="border-radius:50px;" src="img/HeadShotV3.webp"/>
     <h4>Programação</h4>
     <a href="Certificados/Python.pdf"><img align="center" alt="Python" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"></a>&nbsp;
     <a href="Certificados/Dart.pdf"><img align="center" alt="Dart" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg"></a>&nbsp;
