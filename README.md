@@ -1,4 +1,5 @@
 ## Bom dia! Eu sou Asteriuz!
+
 <div align="center">
   <a href="https://github.com/asteriuz">
   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=asteriuz&show_icons=true&theme=dracula&include_all_commits=true&count_private=true"/>
@@ -18,8 +19,9 @@
   <img align="center" alt="CSS" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">&nbsp;
   <img align="center" alt="CSS" height="40" width="40" src="https://i.imgur.com/tjPOPhB.png">&nbsp;
 
-  <img align="right" alt="Asteriuz-pic" height="150" style="border-radius:50px;" src="https://media.discordapp.net/attachments/1025359092258185226/1037171154626019479/Luffy.jpeg?width=683&height=701">&nbsp;
-  <br/>
+<img align="right" alt="Asteriuz-pic" height="200" style="border-radius:50px;" src="img/HeadShotV3.jpg">&nbsp;
+<br/>
+
   <h4>Design</h4>
   <a href="Certificados/Photoshop.pdf"><img align="center" alt="Photoshop" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-line.svg"></a>&nbsp;
   <a href="Certificados/Ilustrator.pdf"><img align="center" alt="Ilustrator" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-line.svg"></a>&nbsp;
