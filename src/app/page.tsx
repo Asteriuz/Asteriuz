@@ -1,17 +1,19 @@
 import About from "@/components/Home/About";
-import Contact from "@/components/Home/Contact";
+import Clients from "@/components/Home/Clients";
+import Curriculo from "@/components/Home/Curriculo";
 import Hero from "@/components/Home/Hero";
-import Mapa from "@/components/Home/Mapa";
-import Product from "@/components/Home/Product";
+import Portfolio from "@/components/Home/Portfolio";
+import Services from "@/components/Home/Services";
 
 export default function Home() {
   return (
-    <main className="overflow-x-hidden">
+    <main className="ml-72 flex flex-1 flex-col overflow-x-hidden">
       <Hero />
       <About />
-      <Product />
-      <Contact />
-      <Mapa />
+      <Services />
+      <Curriculo />
+      <Clients />
+      <Portfolio />
     </main>
   );
 }

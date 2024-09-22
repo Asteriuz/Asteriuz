@@ -34,9 +34,12 @@ const config: Config = {
       xl: "1280px",
     },
     extend: {
+      boxShadow: {
+        'float': '0px 5px 20px 0px #4545601A',
+      },
       colors: {
         semiblack: {
-          DEFAULT: "#222",
+          DEFAULT: "#333",
         },
         cinza: {
           DEFAULT: "#CBCBCD",
@@ -44,21 +47,25 @@ const config: Config = {
           text: "#6b6b6b"
         },
         primary: {
-          // DEFAULT: "#fc5a0a",
-          DEFAULT: "#f5811e",
-          hover: "#d96900",
+          DEFAULT: "#f54141",
+          // DEFAULT: "#f06464",
+          hover: "#9a0a0a",
         },
         secondary: {
-          DEFAULT: "#293d93",
-          hover: "#1a2c6b",
+          DEFAULT: "#FF6500",
+          hover: "#e65e00",
+        },
+        terciary: {
+          DEFAULT: "#FF8A08",
+          hover: "#e57b07",
         },
         transwhite: {
           DEFAULT: "#ffffff75",
         },
-      }
-      // screens: {
-      //   tall: { raw: "(min-height: 800px)" },
-      // },
+      },
+      screens: {
+        tall: { raw: "(min-height: 800px)" },
+      },
     },
     fontFamily: {
       heading: ["var(--font-gotham)"],
@@ -68,6 +75,8 @@ const config: Config = {
     fontWeight: {
       normal: "400",
       bold: "700",
+      medium: "500",
+      semibold: "600",
     },
   },
   plugins: [require("daisyui")],

@@ -1,111 +1,161 @@
 "use client";
-
-import { useState, useEffect } from "react";
-import { useInView } from "react-intersection-observer";
 import Image from "next/image";
+import AboutImage from "@/assets/logo/LogoMark.svg"; // Import the image using the path alias
+import DictList from "../utils/DictList";
 import Link from "next/link";
-import { IoLogoWhatsapp } from "react-icons/io5";
-import FadeInSection from "./Utils/FadeInSection";
-import BigIron from "@/assets/about/big-iron.webp";
-import SmallIron from "@/assets/about/small-iron.webp";
+import Card from "../utils/Cards";
+import AlvoImg from "@/assets/icons/alvo.png";
+import CursoImg from "@/assets/icons/curso.png";
+import ExpImg from "@/assets/icons/exp.png";
+import PessoaImg from "@/assets/icons/pessoa.png";
+import SectionText from "../utils/SectionText";
 
 export default function About() {
-  const [count, setCount] = useState(0);
-  const [isClient, setIsClient] = useState(false); // Add state to check if it's client-side
-  const { ref, inView } = useInView({
-    triggerOnce: true,
-    threshold: 0.1,
-  });
+  // Aniversário, Cidade, Estudo, Website, Telefone, Idade, Expêriencia, Degree, Email, Github
+  const dict = [
+    {
+      chave: "Estudo",
+      valor: "FIAP",
+    },
+    {
+      chave: "Cidade",
+      valor: "São Paulo, SP",
+    },
 
-  useEffect(() => {
-    setIsClient(true); // Set isClient to true after the component mounts
+    {
+      chave: "Email",
+      valor: "augustobb@live.com",
+      href: "mailto:augustobb@live.com",
+    },
 
-    if (inView && window.innerWidth > 768) {
-      let start = 0;
-      let end = 15;
-      let duration = 2000;
-      let stepTime = Math.abs(Math.floor(duration / (end - start)));
-
-      const timer = setInterval(() => {
-        start += 1;
-        setCount(start);
-        if (start === end) {
-          clearInterval(timer);
-        }
-      }, stepTime);
-
-      return () => clearInterval(timer);
-    }
-  }, [inView]);
+    {
+      chave: "Telefone",
+      valor: "+55 11 99743-4003",
+      href: "tel:+5511997434003",
+    },
+    {
+      chave: "Aniversário",
+      valor: "26 de Dezembro de 2002",
+    },
+    {
+      chave: "Idade",
+      valor: "21",
+    },
+    {
+      chave: "Expêriencia",
+      valor: "+3 anos",
+    },
+    {
+      chave: "Escolaridade",
+      valor: "Ensino Superior",
+    },
+    {
+      chave: "Website",
+      valor: "asteriuz.com.br",
+      href: "https://asteriuz.com.br",
+    },
+    {
+      chave: "Github",
+      valor: "@Asteriuz",
+      href: "github.com/Asteriuz",
+    },
+  ];
 
   return (
-    <FadeInSection>
-      <section
-        className="relative flex items-center justify-center py-12 lg:py-24"
-        id="sobre"
-      >
-        <div className="lg:gap-18 grid max-w-screen-xl grid-cols-1 gap-20 rounded-lg px-8 lg:grid-cols-2">
-          <div className="relative">
-            <Image
-              src={BigIron.src}
-              alt="Metal"
-              width={570}
-              height={420}
-              layout="responsive"
-              className="rounded-lg"
-              loading="lazy"
-            />
-            <div
-              ref={ref}
-              className="absolute right-0 top-0 flex items-center justify-center gap-4 rounded-bl-lg rounded-tr-lg bg-primary p-3 font-bold text-white lg:gap-6 lg:p-5"
-            >
-              {isClient && window.innerWidth > 768 ? (
-                <p className="text-4xl font-bold lg:text-6xl">{count}</p>
-              ) : (
-                <p className="text-4xl font-bold lg:text-6xl">15</p>
-              )}
-              <div className="text-xl leading-none lg:text-3xl">
-                <p>Anos de</p>
-                <p>experiência</p>
+    <section id="about" className="mx-auto flex w-full justify-center">
+      <div className="relative flex w-full max-w-screen-xl flex-col items-center  pt-[100px] ">
+        <SectionText firstWord="SOBRE" lastWord="MIM" bgWord="SOBRE" />
+        <div className="flex flex-col gap-8">
+          <div className="flex max-w-screen-xl flex-col items-center justify-center gap-6 md:flex-row ">
+            <div className="shadow-float relative z-10 w-[900px] overflow-hidden rounded-lg p-5">
+              <div
+                id="about-image"
+                className="relative shrink-0 rounded-lg bg-semiblack p-4"
+              >
+                <Image
+                  src={AboutImage.src}
+                  width={900}
+                  height={900}
+                  alt="about"
+                />
               </div>
             </div>
-            <div className="border-5 absolute -bottom-14 -left-7 flex items-center justify-center gap-6 rounded-lg border-[12px] border-white lg:-left-10 lg:border-[20px]">
-              <Image
-                src={SmallIron.src}
-                alt="Metal"
-                width={299.25}
-                height={220.5}
-                className="w-[176.4px] rounded-lg lg:w-[299.25px]"
-                loading="lazy"
-              />
+            <div className="shadow-float  rounded-lg p-8">
+              <div className="flex flex-col gap-4 text-cinza-text">
+                <p>
+                  Eu sou Augusto Barcelos Barros, desenvolvedor web com
+                  experiência na criação de WebSites Mordernos. Ao longo da
+                  minha jornada, tenho me dedicado a oferecer soluções
+                  funcionais e personalizadas para meus clientes, garantindo
+                  satisfação em cada projeto.
+                </p>
+                <p>
+                  Proporciando código limpo e fácil de manter, com foco em
+                  design responsivo para dispositivos móveis. Desenvolvo sites
+                  modernos que atendem às necessidades básicas de presença
+                  online e estratégias de marketing digital.
+                </p>
+                <p>
+                  Ofereço suporte durante o desenvolvimento e estou disponível
+                  para trabalhos freelancers. Conecte-se comigo pelo meu perfil
+                  para discutirmos como posso ajudar a trazer sua ideia à vida.
+                </p>
+                <div className="mt-2 flex items-center gap-5 text-base font-medium">
+                  <Link
+                    href="/Curriculo.pdf"
+                    target="_blank"
+                    className="rounded-md bg-primary px-7 py-3 uppercase text-white"
+                  >
+                    DOWNLOAD CV
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
-          <div className="flex flex-col justify-center gap-5">
-            <p className="text-lg font-bold text-primary">Sobre nós</p>
-            <h2 className="text-5xl font-bold leading-tight">
-              Melhor AÇO, <span className="text-primary">SEM RISCO</span>
-            </h2>
-            <h3 className="text-2xl font-bold">
-              Uma força global na produção e engenharia de ferro e aço
-            </h3>
-            <p>
-              Com nosso conhecimento e experiência, nosso objetivo é atender às
-              necessidades dos nossos clientes, superando suas expectativas. A
-              FERPAN, comércio e artefatos de ferro é a sua escolha para a mais
-              alta qualidade e as ideias mais inovadoras em trabalhos e
-              ornamentações de ferro e metal.
-            </p>
-            <Link
-              target="_blank"
-              href="https://wa.me/5511940775846"
-              className="bold mr-auto flex items-center justify-center gap-2 rounded-lg bg-primary p-4 text-center text-lg font-bold uppercase text-white shadow-lg duration-300 ease-in-out hover:bg-primary-hover md:text-xl"
-            >
-              <IoLogoWhatsapp className="text-3xl" />
-              Fale conosco
-            </Link>
+          <div className="shadow-float max-w-screen-xl  rounded-lg p-8">
+            <div className="flex flex-col gap-4 text-cinza-text">
+              <ul className="grid w-full grid-cols-[12fr_11fr] ">
+                <ul className="flex flex-col gap-4 ">
+                  {dict.slice(0, 5).map((item, index) => (
+                    <DictList key={index} {...item} />
+                  ))}
+                </ul>
+                <ul className="flex flex-col gap-4">
+                  {dict.slice(5, 10).map((item, index) => (
+                    <DictList key={index} {...item} />
+                  ))}
+                </ul>
+              </ul>
+            </div>
+          </div>
+          <div className="grid grid-cols-4 gap-4">
+            <Card
+              subtitle="Projetos concluídos"
+              number={10}
+              suffix="+"
+              icon={AlvoImg.src}
+            />
+            <Card
+              subtitle="Clientes satisfeitos"
+              number={94}
+              suffix=" k+"
+              icon={PessoaImg.src}
+            />
+            <Card
+              subtitle="Cursos realizados"
+              number={20}
+              suffix="+"
+              icon={CursoImg.src}
+            />
+            <Card
+              subtitle="Anos de experiência"
+              number={3}
+              suffix="+"
+              icon={ExpImg.src}
+            />
           </div>
         </div>
-      </section>
-    </FadeInSection>
+      </div>
+    </section>
   );
 }

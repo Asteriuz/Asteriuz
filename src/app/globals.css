@@ -19,7 +19,7 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
   border-radius: 10px 10px 10px 10px;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  background-color: #f5811e;
+  @apply bg-primary;
 }
 
 body.scroll-bottom::-webkit-scrollbar-thumb {
