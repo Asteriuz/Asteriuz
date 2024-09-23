@@ -17,25 +17,25 @@ import { useEffect, useState } from "react";
 export default function Header() {
   const [activeSection, setActiveSection] = useState("");
 
-  useEffect(() => {
-    const sections = document.querySelectorAll("section");
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
-          }
-        });
-      },
-      { threshold: 0.5 }, // Adjust threshold for when you want to detect the section in view
-    );
+  // useEffect(() => {
+  //   const sections = document.querySelectorAll("section");
+  //   const observer = new IntersectionObserver(
+  //     (entries) => {
+  //       entries.forEach((entry) => {
+  //         if (entry.isIntersecting) {
+  //           setActiveSection(entry.target.id);
+  //         }
+  //       });
+  //     },
+  //     { threshold: 0.5 }, // Adjust threshold for when you want to detect the section in view
+  //   );
 
-    sections.forEach((section) => observer.observe(section));
+  //   sections.forEach((section) => observer.observe(section));
 
-    return () => {
-      sections.forEach((section) => observer.unobserve(section));
-    };
-  }, []);
+  //   return () => {
+  //     sections.forEach((section) => observer.unobserve(section));
+  //   };
+  // }, []);
 
   return (
     <>
@@ -86,14 +86,14 @@ export default function Header() {
             <HeaderLink
               Icon={IoDocumentText}
               title="Currículo"
-              link="#resume"
-              isActive={activeSection === "resume"}
+              link="#curriculo"
+              isActive={activeSection === "curriculo"}
             />
             <HeaderLink
               Icon={IoLayers}
-              title="Projetos"
-              link="#projects"
-              isActive={activeSection === "projects"}
+              title="Portfólio"
+              link="#portfolio"
+              isActive={activeSection === "portfolio"}
             />
             <HeaderLink
               Icon={IoMail}

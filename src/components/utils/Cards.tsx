@@ -23,15 +23,15 @@ export default function Card({
         </div>
         {(number && (
           <div className="flex flex-col items-center gap-2">
-            <h3 className="text-3xl font-bold">
+            <p className="text-3xl font-semibold">
               {number}
               {suffix}
-            </h3>
+            </p>
             <p className="text-cinza-text">{subtitle}</p>
           </div>
         )) || (
           <div className="flex flex-col items-center gap-2">
-            <h3 className="text-xl font-bold">{title}</h3>
+            <h3 className="text-xl font-semibold">{title}</h3>
             <p className="text-center text-base text-cinza-text">{subtitle}</p>
           </div>
         )}

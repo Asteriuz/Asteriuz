@@ -32,7 +32,7 @@ const gotham = localFont({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://asteriuz.com.br"),
+  metadataBase: new URL("https://asteriuz.github.io/Asteriuz"),
   title: "Asteriuz",
   description:
     "Portfolio de um desenvolvedor web, com foco em front-end e design.",
@@ -46,7 +46,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const DEV = false;
+  const DEV = true;
 
   return (
     <html lang="pt-br">

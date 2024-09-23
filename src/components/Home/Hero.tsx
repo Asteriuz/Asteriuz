@@ -17,7 +17,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative z-40 flex h-screen w-full flex-col bg-black px-2"
+      className="relative z-40 flex h-screen w-full flex-col bg-black px-2 overflow-hidden"
     >
       <canvas
         id="matrix-bg"

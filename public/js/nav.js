@@ -66,3 +66,13 @@ overlay.addEventListener("click", () => {
   drawerOpenIcon.classList.remove("hidden");
   drawerCloseIcon.classList.add("hidden");
 });
+
+let navLinks = document.querySelectorAll(".nav-link");
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    overlay.classList.add("hidden");
+    nav.classList.add("-translate-x-full");
+    drawerOpenIcon.classList.remove("hidden");
+    drawerCloseIcon.classList.add("hidden");
+  });
+});

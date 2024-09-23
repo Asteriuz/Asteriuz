@@ -14,10 +14,8 @@ export default function HeaderLink({
   isActive,
 }: HeaderLinkProps) {
   return (
-    <div className="flex items-center gap-3">
-      <Icon
-        className={`text-2xl ${isActive ? "text-primary" : "text-semiblack"}`}
-      />
+    <div className="nav-link flex items-center gap-3">
+      <Icon className="text-2xl text-primary" />
       <Link
         href={link}
         className={`font-semibold capitalize transition-all duration-300 ease-in ${
