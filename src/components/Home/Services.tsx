@@ -10,9 +10,9 @@ import SectionText from "../utils/SectionText";
 export default function Services() {
   return (
     <section id="services" className="mx-auto flex w-full justify-center ">
-      <div className="relative flex w-full max-w-screen-xl flex-col items-center  pt-[100px] ">
+      <div className="relative flex w-full max-w-screen-xl flex-col items-center pt-[50px] xl:pt-[100px] ">
         <SectionText firstWord="MEUS" lastWord="SERVIÇOS" bgWord="SERVIÇOS" />
-        <div className="grid w-full grid-cols-3 gap-x-6 gap-y-8">
+        <div className="grid w-full grid-cols-1 xl:grid-cols-3 gap-x-6 gap-y-8">
           <Card
             title="Design de Sites"
             subtitle="Ofereço as últimas tendências de design, aprimorando a experiência do usuário."

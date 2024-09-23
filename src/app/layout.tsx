@@ -6,6 +6,7 @@ import Script from "next/script";
 import localFont from "next/font/local";
 import Header from "@/components/Header/Header";
 import BackToTop from "@/components/utils/BackToTop";
+import NavButton from "@/components/utils/NavButton";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -45,7 +46,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const DEV = true;
+  const DEV = false;
 
   return (
     <html lang="pt-br">
@@ -53,6 +54,7 @@ export default function RootLayout({
         data-theme="light"
         className={`${poppins.variable} ${gotham.variable} ${bebas.variable} vsc-initialized flex min-h-screen min-w-full justify-between bg-white font-body text-semiblack`}
       >
+        <NavButton />
         <Header />
         <BackToTop />
         {children}

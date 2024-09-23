@@ -9,6 +9,7 @@ import CursoImg from "@/assets/icons/curso.png";
 import ExpImg from "@/assets/icons/exp.png";
 import PessoaImg from "@/assets/icons/pessoa.png";
 import SectionText from "../utils/SectionText";
+import { IoDownloadOutline } from "react-icons/io5";
 
 export default function About() {
   // Aniversário, Cidade, Estudo, Website, Telefone, Idade, Expêriencia, Degree, Email, Github
@@ -63,11 +64,11 @@ export default function About() {
 
   return (
     <section id="about" className="mx-auto flex w-full justify-center">
-      <div className="relative flex w-full max-w-screen-xl flex-col items-center  pt-[100px] ">
+      <div className="relative flex w-full max-w-screen-xl flex-col items-center pt-[50px] xl:pt-[100px] ">
         <SectionText firstWord="SOBRE" lastWord="MIM" bgWord="SOBRE" />
-        <div className="flex flex-col gap-8">
+        <div className="flex max-w-full flex-col gap-8 ">
           <div className="flex max-w-screen-xl flex-col items-center justify-center gap-6 md:flex-row ">
-            <div className="shadow-float relative z-10 w-[900px] overflow-hidden rounded-lg p-5">
+            <div className="relative z-10 overflow-hidden rounded-lg p-5 shadow-float xl:w-[900px]">
               <div
                 id="about-image"
                 className="relative shrink-0 rounded-lg bg-semiblack p-4"
@@ -77,13 +78,14 @@ export default function About() {
                   width={900}
                   height={900}
                   alt="about"
+                  className="h-auto w-auto rounded-lg object-cover"
                 />
               </div>
             </div>
-            <div className="shadow-float  rounded-lg p-8">
-              <div className="flex flex-col gap-4 text-cinza-text">
+            <div className="rounded-lg p-6 shadow-float xl:p-8">
+              <div className="flex flex-col gap-4  text-cinza-text">
                 <p>
-                  Eu sou Augusto Barcelos Barros, desenvolvedor web com
+                  Eu sou Augusto Barcelos Barros, full-stack developer com
                   experiência na criação de WebSites Mordernos. Ao longo da
                   minha jornada, tenho me dedicado a oferecer soluções
                   funcionais e personalizadas para meus clientes, garantindo
@@ -104,23 +106,26 @@ export default function About() {
                   <Link
                     href="/Curriculo.pdf"
                     target="_blank"
-                    className="rounded-md bg-primary px-7 py-3 uppercase text-white"
+                    className="group relative flex items-center justify-center gap-2 rounded-md bg-primary px-11 py-3 uppercase text-white"
                   >
-                    DOWNLOAD CV
+                    <IoDownloadOutline className="absolute left-4 translate-y-8 text-3xl opacity-0 transition-all duration-300 group-hover:-translate-y-0 group-hover:opacity-100" />
+                    <p className="inline transition-transform duration-300 ease-in-out group-hover:translate-x-4">
+                      DOWNLOAD CV
+                    </p>
                   </Link>
                 </div>
               </div>
             </div>
           </div>
-          <div className="shadow-float max-w-screen-xl  rounded-lg p-8">
+          <div className="max-w-screen-xl rounded-lg p-6 shadow-float xl:p-8">
             <div className="flex flex-col gap-4 text-cinza-text">
-              <ul className="grid w-full grid-cols-[12fr_11fr] ">
-                <ul className="flex flex-col gap-4 ">
+              <ul className="grid w-full grid-cols-1 gap-y-3 xl:grid-cols-[12fr_11fr] ">
+                <ul className="flex flex-col gap-3 xl:gap-4 ">
                   {dict.slice(0, 5).map((item, index) => (
                     <DictList key={index} {...item} />
                   ))}
                 </ul>
-                <ul className="flex flex-col gap-4">
+                <ul className="flex flex-col gap-3 xl:gap-4">
                   {dict.slice(5, 10).map((item, index) => (
                     <DictList key={index} {...item} />
                   ))}
@@ -128,7 +133,7 @@ export default function About() {
               </ul>
             </div>
           </div>
-          <div className="grid grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 gap-4 xl:grid-cols-4">
             <Card
               subtitle="Projetos concluídos"
               number={10}

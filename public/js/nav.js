@@ -40,26 +40,29 @@ window.onscroll = function () {
 
 window.onload = calcScrollValue;
 
-// /* -------------------------------------------------------------------------- */
-// /*                                 Drawer Menu                                */
-// /* -------------------------------------------------------------------------- */
-// let drawerOpenIcon = document.getElementById("drawer-open-icon");
-// let drawerCloseIcon = document.getElementById("drawer-close-icon");
+/* -------------------------------------------------------------------------- */
+/*                                 Drawer Menu                                */
+/* -------------------------------------------------------------------------- */
+let drawerButton = document.getElementById("drawer-button");
+let drawerOpenIcon = document.getElementById("drawer-open-icon");
+let drawerCloseIcon = document.getElementById("drawer-close-icon");
+let overlay = document.getElementById("overlay");
+let nav = document.getElementById("nav");
 
-// document.addEventListener("click", function (e) {
-//   if (drawerToggle.checked) {
-//     drawerOpenIcon.style.display = "none";
-//     drawerCloseIcon.style.display = "block";
-//   } else {
-//     drawerOpenIcon.style.display = "block";
-//     drawerCloseIcon.style.display = "none";
-//   }
-// });
+function toggleButtonIcons() {
+  drawerOpenIcon.classList.toggle("hidden");
+  drawerCloseIcon.classList.toggle("hidden");
+}
 
-// let drawerButton = document.getElementsByClassName("drawer-button");
+drawerButton.addEventListener("click", () => {
+  nav.classList.toggle("-translate-x-full");
+  overlay.classList.toggle("hidden");
+  toggleButtonIcons();
+});
 
-// for (let i = 0; i < drawerButton.length; i++) {
-//   drawerButton[i].addEventListener("click", function () {
-//     drawerToggle.checked = false;
-//   });
-// }
+overlay.addEventListener("click", () => {
+  overlay.classList.add("hidden");
+  nav.classList.add("-translate-x-full");
+  drawerOpenIcon.classList.remove("hidden");
+  drawerCloseIcon.classList.add("hidden");
+});

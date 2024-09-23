@@ -7,13 +7,15 @@ import Services from "@/components/Home/Services";
 
 export default function Home() {
   return (
-    <main className="ml-72 flex flex-1 flex-col overflow-x-hidden">
+    <main className="flex flex-1 flex-col overflow-x-hidden">
       <Hero />
-      <About />
-      <Services />
-      <Curriculo />
-      <Clients />
-      <Portfolio />
+      <div className="px-4 xl:ml-72 xl:px-0">
+        <About />
+        <Services />
+        <Curriculo />
+        <Clients />
+        <Portfolio />
+      </div>
     </main>
   );
 }
