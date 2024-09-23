@@ -5,6 +5,7 @@ export default function NavButton() {
     <div className="fixed right-4 top-4 z-[70] block xl:hidden">
       <button
         id="drawer-button"
+        aria-label="Abrir menu"
         className="btn btn-ghost z-[70] rounded-full bg-primary p-2"
       >
         {/* <HiOutlineBars3CenterLeft className="h-8 w-8" /> */}

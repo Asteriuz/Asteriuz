@@ -4,10 +4,10 @@ import AboutImage from "@/assets/logo/LogoMark.svg"; // Import the image using t
 import DictList from "../utils/DictList";
 import Link from "next/link";
 import Card from "../utils/Cards";
-import AlvoImg from "@/assets/icons/alvo.png";
-import CursoImg from "@/assets/icons/curso.png";
-import ExpImg from "@/assets/icons/exp.png";
-import PessoaImg from "@/assets/icons/pessoa.png";
+import AlvoImg from "@/assets/icons/alvo.webp";
+import CursoImg from "@/assets/icons/curso.webp";
+import ExpImg from "@/assets/icons/exp.webp";
+import PessoaImg from "@/assets/icons/pessoa.webp";
 import SectionText from "../utils/SectionText";
 import { IoDownloadOutline } from "react-icons/io5";
 
@@ -119,7 +119,7 @@ export default function About() {
           </div>
           <div className="max-w-screen-xl rounded-lg p-6 shadow-float xl:p-8">
             <div className="flex flex-col gap-4 text-cinza-text">
-              <ul className="grid w-full grid-cols-1 gap-y-3 xl:grid-cols-[12fr_11fr] ">
+              <div className="grid w-full grid-cols-1 gap-y-3 xl:grid-cols-[12fr_11fr] ">
                 <ul className="flex flex-col gap-3 xl:gap-4 ">
                   {dict.slice(0, 5).map((item, index) => (
                     <DictList key={index} {...item} />
@@ -130,7 +130,7 @@ export default function About() {
                     <DictList key={index} {...item} />
                   ))}
                 </ul>
-              </ul>
+              </div>
             </div>
           </div>
           <div className="grid grid-cols-1 gap-4 xl:grid-cols-4">

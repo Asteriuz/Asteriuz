@@ -1,10 +1,10 @@
 import Card from "../utils/Cards";
-import DesignImg from "@/assets/icons/design.png";
-import CodeImg from "@/assets/icons/code.png";
-import CreativeImg from "@/assets/icons/creative.png";
-import PCImg from "@/assets/icons/pc.png";
-import RocketImg from "@/assets/icons/rocket.png";
-import SeoImg from "@/assets/icons/seo.png";
+import DesignImg from "@/assets/icons/design.webp";
+import CodeImg from "@/assets/icons/code.webp";
+import CreativeImg from "@/assets/icons/creative.webp";
+import PCImg from "@/assets/icons/pc.webp";
+import RocketImg from "@/assets/icons/rocket.webp";
+import SeoImg from "@/assets/icons/seo.webp";
 import SectionText from "../utils/SectionText";
 
 export default function Services() {

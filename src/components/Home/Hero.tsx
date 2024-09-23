@@ -17,7 +17,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative z-40 flex h-screen w-full flex-col bg-black px-2 overflow-hidden"
+      className="relative z-40 flex h-screen w-full flex-col overflow-hidden bg-black px-2"
     >
       <canvas
         id="matrix-bg"
@@ -25,7 +25,12 @@ export default function Hero() {
       ></canvas>
       <div className="relative flex h-full w-full flex-col items-center justify-center gap-7 xl:gap-8">
         <div className="flex w-52 items-center justify-center overflow-hidden rounded-full border-[3px] border-primary shadow-2xl xl:mb-2 xl:w-64  xl:border-[5px]">
-          <Image src={Profile} alt="Profile" className="rounded-full" />
+          <Image
+            src={Profile}
+            alt="Profile"
+            className="rounded-full"
+            priority
+          />
         </div>
         <div className=" flex flex-col items-center justify-center gap-3 xl:gap-4">
           <h1 className="text-center text-3xl font-bold tracking-wider text-white xl:text-5xl">
@@ -56,6 +61,7 @@ export default function Hero() {
             href={"https://github.com/Asteriuz"}
             target="_blank"
             className="rounded-full border border-transwhite bg-black p-2 transition-colors duration-300 ease-in-out hover:bg-primary"
+            aria-label="Github"
           >
             <FaGithub className=" p-1 text-3xl text-white" />
           </Link>
@@ -64,6 +70,7 @@ export default function Hero() {
             href={"https://www.linkedin.com/in/asteriuz/"}
             target="_blank"
             className="rounded-full border border-transwhite bg-black p-2 transition-colors duration-300 ease-in hover:bg-primary"
+            aria-label="Linkedin"
           >
             <FaLinkedinIn className="p-1 text-3xl text-white" />
           </Link>
@@ -73,6 +80,7 @@ export default function Hero() {
             target="_blank"
             className="rounded-full
               border border-transwhite bg-black p-2 transition-colors duration-300 ease-in hover:bg-primary"
+            aria-label="Twitter"
           >
             <FaWhatsapp className="p-[2px] text-3xl text-white" />
           </Link>
