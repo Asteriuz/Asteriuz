@@ -42,7 +42,7 @@ const config: Config = {
           DEFAULT: "#333",
         },
         cinza: {
-          DEFAULT: "#CBCBCD",
+          DEFAULT: "#e5e5e5",
           border: "#e1e1e",
           text: "#6b6b6b"
         },

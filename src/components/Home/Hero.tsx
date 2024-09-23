@@ -33,14 +33,13 @@ export default function Hero() {
           />
         </div>
         <div className=" flex flex-col items-center justify-center gap-3 xl:gap-4">
-          <h1 className="text-center text-3xl font-bold tracking-wider text-white xl:text-5xl">
+          <h1 className="text-center font-heading text-3xl font-bold tracking-wider text-white xl:text-5xl">
             Augusto Barcelos Barros
           </h1>
-          <h2 className="text-lg font-semibold tracking-wide text-white xl:text-2xl">
-            Eu sou um {/* UX/UI Designer, Web Developer, Logo Designer */}
+          <h2 className="font-heading text-lg font-medium tracking-wide text-white xl:text-2xl">
+            Eu sou um{" "}
             <TypeIt
               className="text-primary"
-              // change caret color
               options={{
                 loop: true,
                 strings: [
