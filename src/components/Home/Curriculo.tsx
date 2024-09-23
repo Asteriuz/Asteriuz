@@ -6,6 +6,8 @@ import { buildStyles, CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import BarProgress from "../utils/BarProgress";
 import CertificateCard from "../utils/CertificateCard";
+import CustomerExperienceImg from "@/assets/certificado/customer-experience.png";
+import PythonImg from "@/assets/certificado/python.jpg";
 
 export default function Curriculo() {
   const knowledge = [
@@ -61,16 +63,16 @@ export default function Curriculo() {
               ))}
             </ul>
           </ResumeCards>
-          <div className="grid grid-cols-3 gap-5 xl:col-span-2">
+          <div className="grid gap-5 xl:col-span-2 xl:grid-cols-3">
             <CertificateCard
-              title="Gerencie aplicações React com Typescript"
+              title="Customer Experience Management"
               description=""
-              image={""}
+              image={CustomerExperienceImg.src}
             />
             <CertificateCard
               title="Curso de Python 3 do Básico Ao Avançado"
               description=""
-              image={""}
+              image={PythonImg.src}
             />
             <CertificateCard
               title="Customer Experience Management"

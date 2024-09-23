@@ -5,7 +5,7 @@ type ResumeCardsProps = {
 
 export default function ResumeCards({ title, children }: ResumeCardsProps) {
   return (
-    <div className="w-full rounded-lg p-5 shadow-float duration-300 ease-in  xl:p-8">
+    <div className="w-full rounded-lg p-5 shadow-float duration-300 ease-in  xl:p-6">
       <div className="flex h-full flex-col gap-x-4 gap-y-8">
         <div className="flex h-full flex-col gap-6">
           <div className="flex flex-col gap-1">

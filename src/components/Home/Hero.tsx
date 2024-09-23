@@ -37,7 +37,7 @@ export default function Hero() {
             Augusto Barcelos Barros
           </h1>
           <h2 className="font-heading text-lg font-medium tracking-wide text-white xl:text-2xl">
-            Eu sou um{" "}
+            Eu sou{" "}
             <TypeIt
               className="text-primary"
               options={{
@@ -104,8 +104,8 @@ export default function Hero() {
       <Link
         href="#about"
         passHref
-        className="scroll-down-arrow-hero absolute bottom-6
-         left-1/2 z-40 mx-auto block -translate-x-1/2 cursor-pointer text-center"
+        className="scroll-down-arrow-hero absolute bottom-3
+         left-1/2 z-40 mx-auto hidden -translate-x-1/2 cursor-pointer text-center tall:block"
         aria-label="Scrolle para baixo para saber mais"
       >
         <svg

@@ -15,10 +15,10 @@ export default function HeaderLink({
 }: HeaderLinkProps) {
   return (
     <div className="nav-link flex items-center gap-3">
-      <Icon className="text-2xl text-primary" />
+      <Icon className="text-xl tall:text-2xl text-primary" />
       <Link
         href={link}
-        className={`font-semibold capitalize transition-all duration-300 ease-in ${
+        className={`font-semibold text-sm tall:text-base capitalize transition-all duration-300 ease-in ${
           isActive ? "text-primary" : "text-semiblack"
         } hover:text-primary`}
       >

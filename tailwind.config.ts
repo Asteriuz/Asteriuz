@@ -64,7 +64,7 @@ const config: Config = {
         },
       },
       screens: {
-        tall: { raw: "(min-height: 800px)" },
+        tall: { raw: "(min-height: 700px)" },
       },
     },
     fontFamily: {

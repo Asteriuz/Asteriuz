@@ -48,9 +48,9 @@ export default function Header() {
         className="fixed z-50 h-screen w-64  -translate-x-full flex-col items-center bg-white shadow-xl transition-all duration-300 ease-in-out xl:z-30 xl:flex xl:w-72 xl:translate-x-0"
       >
         <div className="flex h-full w-full flex-col ">
-          <div className="side-menu-avatar relative flex flex-col items-center justify-center gap-5 overflow-hidden py-7">
+          <div className="side-menu-avatar relative flex shrink-0 flex-col items-center justify-center gap-5 overflow-hidden py-3 tall:py-7">
             <Link
-              className="flex w-36 items-center justify-center overflow-hidden rounded-full border-4 border-semiblack  bg-semiblack shadow-lg"
+              className="flex w-32 shrink-0 items-center justify-center overflow-hidden rounded-full border-4 border-semiblack bg-semiblack  shadow-lg tall:w-36"
               href="#hero"
             >
               <Image
@@ -64,7 +64,7 @@ export default function Header() {
             </h2>
           </div>
           <div className="divider m-0"></div>
-          <div className="ml-6 flex flex-1 flex-col gap-9 py-7 xl:ml-10 ">
+          <div className="ml-6 flex flex-1 flex-col gap-7 tall:gap-9 py-4 tall:py-7 xl:ml-10">
             <HeaderLink
               Icon={IoHome}
               title="Home"
@@ -102,7 +102,7 @@ export default function Header() {
               isActive={activeSection === "contact"}
             />
           </div>
-          <div className="ml-6 flex flex-col justify-center gap-1 py-7 text-sm xl:ml-10">
+          <div className="ml-6 flex flex-col justify-center gap-1 py-7 text-xs tall:text-sm xl:ml-10">
             <p>
               © 2024{" "}
               <Link
