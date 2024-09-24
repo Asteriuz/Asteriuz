@@ -11,13 +11,13 @@ export default function CircularProgress({
   value,
 }: CircularProgressProps) {
   return (
-    <div className="flex flex-col items-center justify-center gap-2">
+    <div className="flex flex-col items-center  gap-2">
       <div className="w-28">
         <CircularProgressbar
           value={value}
           text={`${value}%`}
-          className="font-semibold"
-          strokeWidth={12}
+          className="h-24 w-24 font-semibold"
+          strokeWidth={13}
           styles={buildStyles({
             textSize: "18px",
             textColor: "#333",
@@ -27,7 +27,7 @@ export default function CircularProgress({
           })}
         />
       </div>
-      <p className="font-semibold">{title}</p>
+      <p className="text-center font-semibold">{title}</p>
     </div>
   );
 }

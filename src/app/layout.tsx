@@ -48,7 +48,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const DEV = false;
+  const DEV = process.env.NODE_ENV !== "production";
 
   return (
     <html lang="pt-br">
