@@ -48,7 +48,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const DEV = true;
+  const DEV = false;
 
   return (
     <html lang="pt-br">
