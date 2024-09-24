@@ -1,6 +1,6 @@
 /* variables */
 :root {
-  --primary: #f54141;
+  --primary: #e22f24;
   --semi-black: #333;
   --ti-cursor-color: #fff;
 }
@@ -187,7 +187,7 @@
 }
 
 .material-bubble-white::after {
-  background-color: #f54141;
+  background-color: var(--primary);
   border-color: #fff;
 }
 
@@ -196,10 +196,10 @@
 }
 
 .material-bubble-red:hover {
-  color: #f54141;
+  color: var(--primary);
 }
 
 .material-bubble-red::after {
   background-color: #fff;
-  border-color: #f54141;
+  border-color: var(--primary);
 }

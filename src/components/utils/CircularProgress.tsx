@@ -22,7 +22,7 @@ export default function CircularProgress({
             textSize: "18px",
             textColor: "#333",
             trailColor: "#e5e5e5",
-            pathColor: "#f54141",
+            pathColor: "#e22f24",
             strokeLinecap: "butt",
           })}
         />
