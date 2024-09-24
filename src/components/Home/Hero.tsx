@@ -29,6 +29,8 @@ export default function Hero() {
             src={Profile}
             alt="Profile"
             className="rounded-full"
+            width={246}
+            height={246}
             priority
           />
         </div>
