@@ -70,7 +70,7 @@ const config: Config = {
     fontFamily: {
       heading: ["var(--font-gotham)"],
       body: ["var(--font-poppins)"],
-      category: ["var(--font-bebas)"],
+      // category: ["var(--font-bebas)"],
     },
     fontWeight: {
       normal: "400",

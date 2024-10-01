@@ -64,7 +64,7 @@ export default function Hero() {
             className="rounded-full border border-transwhite bg-black p-2 transition-colors duration-300 ease-in-out hover:bg-primary"
             aria-label="Github"
           >
-            <FaGithub className=" p-1 text-3xl text-white" />
+            <FaGithub className="p-1 text-3xl text-white" />
           </Link>
 
           <Link

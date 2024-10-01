@@ -32,10 +32,10 @@ export default function Curriculo() {
           {/* habilidades de programação, Fluência em Idiomas, Competências Profissionais,  Conhecimentos*/}
           <ResumeCards title="Habilidades de Programação">
             <div className="flex flex-col gap-5">
-              <BarProgress title="HTML" value={90} />
-              <BarProgress title="CSS" value={85} />
-              <BarProgress title="JavaScript" value={80} />
-              <BarProgress title="React" value={85} />
+              <BarProgress title="React & Next.js" value={90} />
+              <BarProgress title="TailwindCSS" value={100} />
+              <BarProgress title="Python" value={85} />
+              <BarProgress title="TypeScript" value={90} />
             </div>
           </ResumeCards>
           <ResumeCards title="Fluência em Idiomas">
@@ -69,16 +69,19 @@ export default function Curriculo() {
               title="Customer Experience Management"
               description="Gestão de Experiência do Cliente, garantindo a satisfação e fidelização."
               image={CustomerExperienceImg.src}
+              link="https://on.fiap.com.br/local/nanocourses/validar-certificado/?chave=ba501d43f4a8e52f46d56c96a8d86ccf"
             />
             <CertificateCard
               title="Python 3 do Básico Ao Avançado"
               description="Dominío em Python 3, garantindo soluções rápidas, eficazes e automatizadas."
               image={PythonImg.src}
+              link="https://ude.my/UC-fba25b71-3441-4e33-8e8e-9cf43adc6944"
             />
             <CertificateCard
               title="Aplicações React com Typescript"
               description="Desenvolvimento de aplicações web com React e Typescript."
               image={ReactImg.src}
+              link="https://cursos.alura.com.br/user/asteriuz/degree-react-ts-v581770-581770/certificate"
             />
           </div>
         </div>

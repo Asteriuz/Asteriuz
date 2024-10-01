@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Poppins, Bebas_Neue } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import "@/styles/misc.css";
 import Script from "next/script";
@@ -13,13 +13,6 @@ const poppins = Poppins({
   display: "swap",
   variable: "--font-poppins",
   weight: ["400", "500", "600", "700"],
-});
-
-const bebas = Bebas_Neue({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-bebas",
-  weight: "400",
 });
 
 const gotham = localFont({
@@ -51,10 +44,10 @@ export default function RootLayout({
   const DEV = process.env.NODE_ENV !== "production";
 
   return (
-    <html lang="pt-br">
+  <html lang="pt-br">
       <body
         data-theme="light"
-        className={`${poppins.variable} ${gotham.variable} ${bebas.variable} vsc-initialized flex min-h-screen min-w-full justify-between bg-white font-body text-semiblack`}
+        className={`${poppins.variable} ${gotham.variable}  vsc-initialized flex min-h-screen min-w-full justify-between bg-white font-body text-semiblack`}
       >
         <NavButton />
         <Header />
