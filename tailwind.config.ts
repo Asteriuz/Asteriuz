@@ -9,8 +9,8 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   daisyui: {
-    themes: ["dark"],
-    styled: true,
+    // themes: ["dark"],
+    styled: false,
   },
   safelist: [
     "text-pink-500",

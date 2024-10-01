@@ -3,64 +3,68 @@ import Image from "next/image";
 import AboutImage from "@/assets/logo/LogoMark.svg"; // Import the image using the path alias
 import DictList from "../utils/DictList";
 import Link from "next/link";
-import Card from "../utils/Cards";
+import Card from "../utils/Cards/Cards";
 import AlvoImg from "@/assets/icons/alvo.webp";
 import CursoImg from "@/assets/icons/curso.webp";
 import ExpImg from "@/assets/icons/exp.webp";
 import PessoaImg from "@/assets/icons/pessoa.webp";
 import SectionText from "../utils/SectionText";
 import { IoDownloadOutline } from "react-icons/io5";
+import { useGlitch } from "react-powerglitch";
+
+const dict = [
+  {
+    chave: "Estudo",
+    valor: "FIAP",
+  },
+  {
+    chave: "Cidade",
+    valor: "São Paulo, SP",
+  },
+
+  {
+    chave: "Email",
+    valor: "augustobb@live.com",
+    href: "mailto:augustobb@live.com",
+  },
+
+  {
+    chave: "Telefone",
+    valor: "+55 11 99743-4003",
+    href: "tel:+5511997434003",
+  },
+  {
+    chave: "Aniversário",
+    valor: "26 de Dezembro de 2002",
+  },
+  {
+    chave: "Idade",
+    valor: "21",
+  },
+  {
+    chave: "Expêriencia",
+    valor: "+3 anos",
+  },
+  {
+    chave: "Escolaridade",
+    valor: "Ensino Superior",
+  },
+  {
+    chave: "Website",
+    valor: "asteriuz.com.br",
+    href: "https://asteriuz.com.br",
+  },
+  {
+    chave: "Github",
+    valor: "@Asteriuz",
+    href: "github.com/Asteriuz",
+  },
+];
 
 export default function About() {
-  // Aniversário, Cidade, Estudo, Website, Telefone, Idade, Expêriencia, Degree, Email, Github
-  const dict = [
-    {
-      chave: "Estudo",
-      valor: "FIAP",
-    },
-    {
-      chave: "Cidade",
-      valor: "São Paulo, SP",
-    },
-
-    {
-      chave: "Email",
-      valor: "augustobb@live.com",
-      href: "mailto:augustobb@live.com",
-    },
-
-    {
-      chave: "Telefone",
-      valor: "+55 11 99743-4003",
-      href: "tel:+5511997434003",
-    },
-    {
-      chave: "Aniversário",
-      valor: "26 de Dezembro de 2002",
-    },
-    {
-      chave: "Idade",
-      valor: "21",
-    },
-    {
-      chave: "Expêriencia",
-      valor: "+3 anos",
-    },
-    {
-      chave: "Escolaridade",
-      valor: "Ensino Superior",
-    },
-    {
-      chave: "Website",
-      valor: "asteriuz.com.br",
-      href: "https://asteriuz.com.br",
-    },
-    {
-      chave: "Github",
-      valor: "@Asteriuz",
-      href: "github.com/Asteriuz",
-    },
-  ];
+  const glitch = useGlitch({
+    playMode: "hover",
+  });
 
   return (
     <section id="about" className="mx-auto flex w-full justify-center">
@@ -75,10 +79,15 @@ export default function About() {
               >
                 <Image
                   src={AboutImage.src}
+                  ref={glitch.ref}
                   width={900}
                   height={900}
-                  alt="about"
-                  className="h-auto w-auto rounded-lg object-cover"
+                  alt="Asteriuz Logo"
+                  className="glitch h-auto w-auto rounded-lg object-cover"
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto",
+                  }}
                 />
               </div>
             </div>

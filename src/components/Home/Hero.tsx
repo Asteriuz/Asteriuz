@@ -12,8 +12,21 @@ import {
 import Link from "next/link";
 import Sunset from "@/assets/bg/sunset.webp";
 import TypeIt from "typeit-react";
+import { useGlitch } from "react-powerglitch";
 
 export default function Hero() {
+  const glitch = useGlitch({
+    playMode: "hover",
+    timing: {
+      // duration: 2000,
+      // easing: "ease-in",
+      // iterations: Infinity,
+    },
+    glitchTimeSpan: {
+      // start: 0,
+      // end: 0.3,
+    },
+  });
   return (
     <section
       id="hero"
@@ -24,7 +37,10 @@ export default function Hero() {
         className="absolute h-full w-full brightness-[0.7]"
       ></canvas>
       <div className="relative flex h-full w-full flex-col items-center justify-center gap-7 xl:gap-8">
-        <div className="flex w-52 items-center justify-center overflow-hidden rounded-full border-[3px] border-primary shadow-2xl xl:mb-2 xl:w-64  xl:border-[5px]">
+        <div
+          ref={glitch.ref}
+          className="flex w-52 items-center justify-center overflow-hidden rounded-full border-[3px] border-primary shadow-2xl xl:mb-2 xl:w-64  xl:border-[5px]"
+        >
           <Image
             src={Profile}
             alt="Profile"
@@ -32,6 +48,10 @@ export default function Hero() {
             width={246}
             height={246}
             priority
+            style={{
+              maxWidth: "100%",
+              height: "auto",
+            }}
           />
         </div>
         <div className=" flex flex-col items-center justify-center gap-3 xl:gap-4">

@@ -1,4 +1,4 @@
-import Card from "../utils/Cards";
+import Card from "../utils/Cards/Cards";
 import DesignImg from "@/assets/icons/design.webp";
 import CodeImg from "@/assets/icons/code.webp";
 import CreativeImg from "@/assets/icons/creative.webp";

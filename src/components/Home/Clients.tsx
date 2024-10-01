@@ -20,7 +20,10 @@ export default function Clients() {
                   alt={"Clinica Plena Logo"}
                   width={240}
                   height={240}
-                />
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto"
+                  }} />
               </div>
             </div>
           </div>
@@ -32,7 +35,10 @@ export default function Clients() {
                   alt={"Clinica Plena Logo"}
                   width={100}
                   height={100}
-                />
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto"
+                  }} />
                 <p className="font-heading text-4xl font-medium">Thdnr Group</p>
               </div>
             </div>
@@ -46,7 +52,10 @@ export default function Clients() {
                   alt={"Clinica Plena Logo"}
                   width={334.21}
                   height={129.93}
-                />
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto"
+                  }} />
               </div>
             </div>
           </div>

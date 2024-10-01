@@ -1,14 +1,89 @@
-import { IoCheckmark } from "react-icons/io5";
+import {
+  IoCheckmark,
+  IoCodeSlash,
+  IoDesktopOutline,
+  IoFlash,
+  IoHammer,
+  IoLanguage,
+  IoMedkit,
+  IoMedkitOutline,
+  IoSchool,
+} from "react-icons/io5";
 import CircularProgress from "../utils/CircularProgress";
-import ResumeCards from "../utils/ResumeCards";
+import ResumeCards from "../utils/Cards/ResumeCards";
 import SectionText from "../utils/SectionText";
 import { buildStyles, CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import BarProgress from "../utils/BarProgress";
-import CertificateCard from "../utils/CertificateCard";
-import CustomerExperienceImg from "@/assets/certificado/customer-experience.png";
-import PythonImg from "@/assets/certificado/python.png";
-import ReactImg from "@/assets/certificado/react.png";
+import CertificateCard from "../utils/Cards/CertificateCard";
+import CustomerExperienceImg from "@/assets/certificado/customer-experience.webp";
+import PythonImg from "@/assets/certificado/python.webp";
+import ReactImg from "@/assets/certificado/react.webp";
+import VerticalTimelineWrapper from "../utils/VerticalTimelineWrapper";
+import { title } from "process";
+
+const timelineFormationItems = [
+  {
+    title: "Curso de Inglês Avançado",
+    date: "Cultura Inglesa / 2014 - 2018",
+    icon: <IoLanguage />,
+    list: [
+      "Compreensão avançada da língua inglesa, tanto oral quanto escrita.",
+      "Capacidade de analisar textos literários e acadêmicos.",
+    ],
+  },
+  {
+    title: "Análise e Desenvolvimento de Sistemas",
+    date: "FIAP / 2023 - Presente",
+    icon: <IoSchool />,
+    list: [
+      "Criação de soluções completas, abrangendo frontend e backend.",
+      "Implementação de metodologias ágeis para entrega rápida e flexível.",
+    ],
+  },
+  {
+    title: "Cursos de Desenvolvimento na Alura",
+    date: "Alura / 2021 - Presente",
+    icon: <IoCodeSlash />,
+    list: [
+      "Aprendizado de diversas linguagens de programação e frameworks modernos.",
+      "Foco em desenvolvimento web e mobile",
+    ],
+  },
+];
+
+const timelineExperienceItems = [
+  {
+    title: "WebSite Clínica Plena",
+    date: "Freelancer",
+    icon: <IoMedkit />,
+    list: [
+      "Desenvolvimento e lançamento do site da Clínica Plena",
+      "Registro de domínio, otimização de SEO e performance",
+      "https://clinicaplenatatuape.com.br/",
+    ],
+  },
+  {
+    title: "WebSite Thndr Group",
+    date: "Freelancer",
+    icon: <IoFlash />,
+    list: [
+      "Desenvolvimento e lançamento do site da Thndr Group",
+      "Registro de domínio, otimização de SEO e performance",
+      "https://thndr.com.br/",
+    ],
+  },
+  {
+    title: "Ferpan Comércio de Ferros",
+    date: "Freelancer",
+    icon: <IoHammer />,
+    list: [
+      "Desenvolvimento e lançamento do site da Ferpan",
+      "Registro de domínio, otimização de SEO e performance",
+      "https://ferpancomerciodeferro.com.br/",
+    ],
+  },
+];
 
 export default function Curriculo() {
   const knowledge = [
@@ -27,9 +102,12 @@ export default function Curriculo() {
       <div className="relative flex w-full max-w-screen-xl flex-col items-center pt-[50px] xl:pt-[100px] ">
         <SectionText firstWord="MEU" lastWord="CURRÍCULO" bgWord="CURRÍCULO" />
         <div className="grid w-full grid-cols-1 gap-x-6 gap-y-8 xl:grid-cols-2">
-          <ResumeCards title="Formação Acadêmica"></ResumeCards>
-          <ResumeCards title="Experiência Profissional"></ResumeCards>
-          {/* habilidades de programação, Fluência em Idiomas, Competências Profissionais,  Conhecimentos*/}
+          <ResumeCards title="Formação Acadêmica">
+            <VerticalTimelineWrapper items={timelineFormationItems} />
+          </ResumeCards>
+          <ResumeCards title="Experiência Profissional">
+            <VerticalTimelineWrapper items={timelineExperienceItems} />
+          </ResumeCards>
           <ResumeCards title="Habilidades de Programação">
             <div className="flex flex-col gap-5">
               <BarProgress title="React & Next.js" value={90} />

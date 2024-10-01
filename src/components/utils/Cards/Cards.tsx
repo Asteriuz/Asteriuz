@@ -19,7 +19,15 @@ export default function Card({
     <div className="w-full rounded-lg p-6 shadow-float duration-300 ease-in hover:-translate-y-3 xl:p-8">
       <div className="flex flex-col items-center gap-x-4 gap-y-8">
         <div className="flex h-20 w-20 items-center justify-center">
-          <Image src={icon} alt={subtitle} width={80} height={80} />
+          <Image
+            src={icon}
+            alt={subtitle}
+            width={80}
+            height={80}
+            style={{
+              maxWidth: "100%",
+              height: "auto"
+            }} />
         </div>
         {(number && (
           <div className="flex flex-col items-center gap-2">

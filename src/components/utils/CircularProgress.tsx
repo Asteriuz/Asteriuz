@@ -12,11 +12,11 @@ export default function CircularProgress({
 }: CircularProgressProps) {
   return (
     <div className="flex flex-col items-center  gap-2">
-      <div className="w-28">
+      <div className="flex w-28">
         <CircularProgressbar
           value={value}
           text={`${value}%`}
-          className="h-24 w-24 font-semibold"
+          className="flex h-24 w-24 font-semibold"
           strokeWidth={13}
           styles={buildStyles({
             textSize: "18px",
