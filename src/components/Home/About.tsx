@@ -57,7 +57,7 @@ const dict = [
   {
     chave: "Github",
     valor: "@Asteriuz",
-    href: "github.com/Asteriuz",
+    href: "https://github.com/Asteriuz",
   },
 ];
 
@@ -151,8 +151,8 @@ export default function About() {
             />
             <Card
               subtitle="Clientes satisfeitos"
-              number={94}
-              suffix=" k+"
+              number={100}
+              suffix="+"
               icon={PessoaImg.src}
             />
             <Card

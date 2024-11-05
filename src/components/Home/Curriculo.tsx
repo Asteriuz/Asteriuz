@@ -120,8 +120,8 @@ export default function Curriculo() {
             <div className="flex flex-col gap-5">
               <BarProgress title="Português" value={100} />
               <BarProgress title="Inglês" value={95} />
-              <BarProgress title="Espanhol" value={80} />
-              <BarProgress title="Japonês" value={60} />
+              <BarProgress title="Espanhol" value={50} />
+              <BarProgress title="Japonês" value={30} />
             </div>
           </ResumeCards>
           <ResumeCards title="Competências Profissionais">
