@@ -109,6 +109,7 @@ export default function Contact() {
           </div>
           <div className="xl:col-span-2 h-96 xl:row-span-2 overflow-hidden rounded-lg shadow-float">
             <iframe
+              title="Localização"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18241.88094357834!2d-46.58563004959454!3d-23.537456240408996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5ee7acdd50f5%3A0x3eeaf24eff368507!2zVGF0dWFww6ksIFPDo28gUGF1bG8gLSBTUA!5e0!3m2!1spt-BR!2sbr!4v1727764754773!5m2!1spt-BR!2sbr"
               style={{ border: 0, width: "100%", height: "100%" }}
               allowFullScreen
