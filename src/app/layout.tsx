@@ -27,7 +27,7 @@ const gotham = localFont({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://asteriuz.github.io/Asteriuz"),
+  metadataBase: new URL("https://asteriuz.com.br"),
   title: "Asteriuz",
   description:
     "Portfolio de um desenvolvedor web, com foco em front-end e design.",
@@ -56,8 +56,8 @@ export default function RootLayout({
       </body>
       {(DEV && (
         <>
-          <Script src="Asteriuz/js/nav.js"></Script>
-          <Script src="Asteriuz/js/util.js" defer></Script>
+          <Script src="js/nav.js"></Script>
+          <Script src="js/util.js" defer></Script>
         </>
       )) || (
         <>
