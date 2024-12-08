@@ -16,7 +16,7 @@ export default function ProjectCard({ image, title, link }: ProjectCardProps) {
           <Image
             className="overflow-hidden rounded-lg duration-300 ease-in hover:cursor-pointer group-hover:rounded-b-none"
             src={image}
-            alt={title}
+            alt={`Imagem de Hero do site ${title}`}
             width={1920}
             height={1080}
             sizes="100vw"
