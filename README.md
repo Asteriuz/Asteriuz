@@ -4,7 +4,10 @@
 
 # Asteriuz's Website
 
-Este é um projeto [Next.js](https://nextjs.org/) para o meu Portfólio. Ele é inicializado com [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) e usa Tailwind CSS para estilização.
+Este é um projeto [Next.js](https://nextjs.org/) para o meu Portfólio. Ele é
+inicializado com
+[`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app)
+e usa Tailwind CSS para estilização.
 
 ## Estrutura do Projeto
 
@@ -30,7 +33,8 @@ Em seguida, execute o servidor de desenvolvimento:
 npm run dev
 ```
 
-Abra [http://localhost:3000](http://localhost:3000) no seu navegador para ver o resultado.
+Abra [http://localhost:3000](http://localhost:3000) no seu navegador para ver o
+resultado.
 
 ## Construindo o Projeto
 
@@ -50,11 +54,14 @@ npm run lint
 
 ## Implantação
 
-O projeto está configurado para ser implantado no GitHub Pages. A implantação é gerenciada por um fluxo de trabalho do GitHub Actions definido em `.github/workflows/deploy.yml`.
+O projeto está configurado para ser implantado no GitHub Pages. A implantação é
+gerenciada por um fluxo de trabalho do GitHub Actions definido em
+`.github/workflows/deploy.yml`.
 
 ## Contribuindo
 
-Contribuições são bem-vindas! Por favor, certifique-se de fazer o lint do seu código antes de enviar um pull request.
+Contribuições são bem-vindas! Por favor, certifique-se de fazer o lint do seu
+código antes de enviar um pull request.
 
 ## Licença
 

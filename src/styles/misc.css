@@ -3,6 +3,7 @@
   --primary: #e22f24;
   --semi-black: #333;
   --ti-cursor-color: #fff;
+  --spin-animation: spin-profile 2s linear infinite;
 }
 
 .progress {
@@ -136,6 +137,29 @@
   z-index: -1;
 }
 
+/* @keyframes spin-diagonal {
+  from {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(405deg);
+  }
+}
+
+#about-image::before {
+  content: "";
+  position: absolute;
+  background-color: var(--primary);
+  width: 80%;
+  height: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  filter: blur(64px);
+  z-index: -1;
+  transform-origin: bottom;
+  animation: spin-diagonal 3s linear infinite;
+} */
+
 /* -------------------------------------------------------------------------- */
 /*                         Buttons with bubble effect                         */
 /* -------------------------------------------------------------------------- */
@@ -214,4 +238,96 @@
 .material-bubble-red::after {
   background-color: #fff;
   border-color: var(--primary);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                               Hero Profile                                 */
+/* -------------------------------------------------------------------------- */
+
+@keyframes spin-profile {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.hero-profile {
+  margin-bottom: 8px;
+  width: 258px;
+  height: 258px;
+  font-size: 20px;
+  color: #fff;
+  background: none;
+  border: none;
+  border-radius: 50%;
+  position: relative;
+  z-index: 0;
+  transition: 0.3s;
+}
+.hero-profile:before {
+  content: "";
+  position: absolute;
+  inset: -4px;
+  padding: 6px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #e22f24,
+    #0000 30deg 120deg,
+    #ff6500 150deg 180deg,
+    #0000 210deg 300deg,
+    #e22f24 330deg
+  );
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: intersect;
+  animation: var(--spin-animation);
+}
+
+.hero-profile:after {
+  content: "";
+  position: absolute;
+  inset: -50px;
+  background: radial-gradient(80px at left 150px top 75px, #e22f24 70%, #0000),
+    radial-gradient(80px at right 150px bottom 75px, #ff6500 70%, #0000);
+  filter: blur(80px);
+  opacity: 0.5;
+  animation: var(--spin-animation);
+}
+
+.hero-profile:before,
+.hero-profile:after {
+  transition: 0.5s;
+}
+.hero-profile {
+  box-shadow: 0 0 0 1px #666;
+}
+
+.hero-profile:before {
+  background-color: #222;
+  border: 1px solid #333;
+}
+
+.hero-profile > img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media (max-width: 1280px) {
+  .hero-profile {
+    margin-bottom: 0px;
+    width: 208px;
+    height: 208px;
+  }
 }

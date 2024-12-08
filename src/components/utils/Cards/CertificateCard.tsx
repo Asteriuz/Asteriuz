@@ -34,8 +34,9 @@ export default function CertificateCard({
                 style={{
                   objectFit: "cover",
                   width: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
             </Link>
             <div className="flex flex-col gap-2 px-5 pb-5">
               <h3 className="text-xl font-semibold">{title}</h3>

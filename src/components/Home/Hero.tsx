@@ -1,36 +1,15 @@
 "use client";
 import Image from "next/image";
 import Profile from "@/assets/profile/Profile.webp";
-import {
-  FaFacebookF,
-  FaGithub,
-  FaInstagram,
-  FaLinkedinIn,
-  FaWhatsapp,
-  FaXTwitter,
-} from "react-icons/fa6";
+import { FaGithub, FaLinkedinIn, FaWhatsapp } from "react-icons/fa6";
 import Link from "next/link";
-import Sunset from "@/assets/bg/sunset.webp";
 import TypeIt from "typeit-react";
-import { useGlitch } from "react-powerglitch";
 
 export default function Hero() {
-  const glitch = useGlitch({
-    playMode: "hover",
-    timing: {
-      // duration: 2000,
-      // easing: "ease-in",
-      // iterations: Infinity,
-    },
-    glitchTimeSpan: {
-      // start: 0,
-      // end: 0.3,
-    },
-  });
   return (
     <section
       id="hero"
-      className="relative z-40 flex h-screen w-full flex-col overflow-hidden bg-black px-2"
+      className="relative z-40 flex h-screen w-full flex-col overflow-hidden bg-black"
     >
       <canvas
         id="matrix-bg"
@@ -38,8 +17,7 @@ export default function Hero() {
       ></canvas>
       <div className="relative flex h-full w-full flex-col items-center justify-center gap-7 xl:gap-8">
         <div
-          ref={glitch.ref}
-          className="flex w-52 items-center justify-center overflow-hidden rounded-full border-[3px] border-primary shadow-2xl xl:mb-2 xl:w-64  xl:border-[5px]"
+          className="hero-profile"
         >
           <Image
             src={Profile}

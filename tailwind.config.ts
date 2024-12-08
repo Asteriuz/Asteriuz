@@ -35,7 +35,7 @@ const config: Config = {
     },
     extend: {
       boxShadow: {
-        'float': '0px 5px 20px 0px #4545601A',
+        "float": "0px 5px 20px 0px #4545601A",
       },
       colors: {
         semiblack: {
@@ -44,7 +44,7 @@ const config: Config = {
         cinza: {
           DEFAULT: "#e5e5e5",
           border: "#e1e1e",
-          text: "#6b6b6b"
+          text: "#6b6b6b",
         },
         primary: {
           DEFAULT: "#e22f24",

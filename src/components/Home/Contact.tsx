@@ -1,17 +1,13 @@
 "use client";
 import { useState } from "react";
 import {
-  IoCall,
   IoCallOutline,
-  IoLocation,
   IoLocationOutline,
   IoLogoWhatsapp,
-  IoMail,
   IoMailOutline,
 } from "react-icons/io5";
 import ContactCard from "../utils/Cards/ContactCards";
 import SectionText from "../utils/SectionText";
-import { FaLocationDot, FaLocationPin } from "react-icons/fa6";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -30,9 +26,10 @@ export default function Contact() {
   const handleSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault();
     const { name, email, message } = formData;
-    const whatsappMessage = `Nome: ${name}%0AEmail: ${email}%0AMensagem: ${message}`;
+    const whatsappMessage =
+      `Nome: ${name}%0AEmail: ${email}%0AMensagem: ${message}`;
     const whatsappLink = `https://wa.me/5511997434003?text=${whatsappMessage}`;
-    window.open(whatsappLink, "_blank");
+    globalThis.open(whatsappLink, "_blank");
   };
 
   return (
@@ -98,7 +95,8 @@ export default function Contact() {
                 // className="rounded-lg border p-3 bg-white flex-grow" change outline when focused
                 className="flex-grow rounded-lg border bg-white p-3 focus:border-transparent focus:outline-none focus:ring-2 focus:ring-primary h-40 xl:h-auto"
                 required
-              ></textarea>
+              >
+              </textarea>
               <button
                 type="submit"
                 className="rounded-lg bg-primary p-3 text-white"
@@ -115,7 +113,8 @@ export default function Contact() {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
+            >
+            </iframe>
           </div>
         </div>
       </div>

@@ -1,6 +1,5 @@
 "use client";
 import Link from "next/link";
-import { IoLanguage, IoSchool } from "react-icons/io5";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -46,17 +45,17 @@ export default function VerticalTimelineWrapper({
           <ul className="mt-2 flex list-disc flex-col gap-1 pl-5 text-sm overflow-hidden">
             {item.list.map((li, i) => (
               <li key={i}>
-                {li.startsWith("https://") ? (
-                  <Link
-                    className="text-primary hover:underline"
-                    href={li}
-                    target="_blank"
-                  >
-                    {li.split("https://")[1].replace("/", "")}
-                  </Link>
-                ) : (
-                  li
-                )}
+                {li.startsWith("https://")
+                  ? (
+                    <Link
+                      className="text-primary hover:underline"
+                      href={li}
+                      target="_blank"
+                    >
+                      {li.split("https://")[1].replace("/", "")}
+                    </Link>
+                  )
+                  : li}
               </li>
             ))}
           </ul>

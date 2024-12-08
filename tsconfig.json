@@ -14,12 +14,12 @@
     "incremental": true,
     "plugins": [
       {
-        "name": "next",
-      },
+        "name": "next"
+      }
     ],
     "paths": {
-      "@/*": ["./src/*"],
-    },
+      "@/*": ["./src/*"]
+    }
   },
   "include": [
     "next-env.d.ts",
@@ -27,7 +27,7 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "src/components/**/*.ts",
-    "src/components/**/*.tsx",
+    "src/components/**/*.tsx"
   ],
-  "exclude": ["node_modules"],
+  "exclude": ["node_modules"]
 }

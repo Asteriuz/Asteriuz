@@ -1,18 +1,15 @@
 import {
   IoCheckmark,
   IoCodeSlash,
-  IoDesktopOutline,
   IoFlash,
   IoHammer,
   IoLanguage,
   IoMedkit,
-  IoMedkitOutline,
   IoSchool,
 } from "react-icons/io5";
 import CircularProgress from "../utils/CircularProgress";
 import ResumeCards from "../utils/Cards/ResumeCards";
 import SectionText from "../utils/SectionText";
-import { buildStyles, CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import BarProgress from "../utils/BarProgress";
 import CertificateCard from "../utils/Cards/CertificateCard";
@@ -20,9 +17,17 @@ import CustomerExperienceImg from "@/assets/certificado/customer-experience.webp
 import PythonImg from "@/assets/certificado/python.webp";
 import ReactImg from "@/assets/certificado/react.webp";
 import VerticalTimelineWrapper from "../utils/VerticalTimelineWrapper";
-import { title } from "process";
 
 const timelineFormationItems = [
+  {
+    title: "Análise e Desenvolvimento de Sistemas",
+    date: "FIAP / 2023 - 2025",
+    icon: <IoSchool />,
+    list: [
+      "Criação de soluções completas, abrangendo frontend e backend.",
+      "Implementação de metodologias ágeis para entrega rápida e flexível.",
+    ],
+  },
   {
     title: "Curso de Inglês Avançado",
     date: "Cultura Inglesa / 2014 - 2018",
@@ -30,15 +35,6 @@ const timelineFormationItems = [
     list: [
       "Compreensão avançada da língua inglesa, tanto oral quanto escrita.",
       "Capacidade de analisar textos literários e acadêmicos.",
-    ],
-  },
-  {
-    title: "Análise e Desenvolvimento de Sistemas",
-    date: "FIAP / 2023 - Presente",
-    icon: <IoSchool />,
-    list: [
-      "Criação de soluções completas, abrangendo frontend e backend.",
-      "Implementação de metodologias ágeis para entrega rápida e flexível.",
     ],
   },
   {
@@ -54,7 +50,7 @@ const timelineFormationItems = [
 
 const timelineExperienceItems = [
   {
-    title: "WebSite Clínica Plena",
+    title: "Clínica Plena",
     date: "Freelancer",
     icon: <IoMedkit />,
     list: [
@@ -64,7 +60,7 @@ const timelineExperienceItems = [
     ],
   },
   {
-    title: "WebSite Thndr Group",
+    title: "Thndr Group",
     date: "Freelancer",
     icon: <IoFlash />,
     list: [
@@ -90,7 +86,7 @@ export default function Curriculo() {
     "Fornecimento para Design e Desenvolvimento",
     "Vontade de aprender novas Tecnologias",
     "Habilidades de resolução de problemas e coordenação",
-    "Desenvolvimento de Aplicativos Móveis e Negócios",
+    "Desenvolvimento de Aplicativos Móveis e Websites",
     "Trabalho em equipe / Gerenciamento de Equipe",
     "Flexível com Condições de Trabalho",
     "Excelente habilidade de escuta e rápida aprendizagem",

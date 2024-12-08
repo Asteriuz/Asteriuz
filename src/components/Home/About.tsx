@@ -10,7 +10,6 @@ import ExpImg from "@/assets/icons/exp.webp";
 import PessoaImg from "@/assets/icons/pessoa.webp";
 import SectionText from "../utils/SectionText";
 import { IoDownloadOutline } from "react-icons/io5";
-import { useGlitch } from "react-powerglitch";
 
 const dict = [
   {
@@ -62,10 +61,6 @@ const dict = [
 ];
 
 export default function About() {
-  const glitch = useGlitch({
-    playMode: "hover",
-  });
-
   return (
     <section id="about" className="mx-auto flex w-full justify-center">
       <div className="relative flex w-full max-w-screen-xl flex-col items-center pt-[50px] xl:pt-[100px] ">
@@ -79,11 +74,10 @@ export default function About() {
               >
                 <Image
                   src={AboutImage.src}
-                  ref={glitch.ref}
                   width={900}
                   height={900}
                   alt="Asteriuz Logo"
-                  className="glitch h-auto w-auto rounded-lg object-cover"
+                  className="h-auto w-auto rounded-lg object-cover"
                   style={{
                     maxWidth: "100%",
                     height: "auto",
@@ -142,7 +136,7 @@ export default function About() {
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-1 gap-4 xl:grid-cols-4">
+          <div className="grid grid-cols-1 gap-4 lg:grid-cols-4">
             <Card
               subtitle="Projetos concluídos"
               number={10}

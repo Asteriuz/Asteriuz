@@ -7,6 +7,7 @@ import localFont from "next/font/local";
 import Header from "@/components/Header/Header";
 import BackToTop from "@/components/utils/BackToTop";
 import NavButton from "@/components/utils/NavButton";
+import process from "node:process";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -44,7 +45,7 @@ export default function RootLayout({
   const DEV = process.env.NODE_ENV !== "production";
 
   return (
-  <html lang="pt-br">
+    <html lang="pt-br">
       <body
         data-theme="light"
         className={`${poppins.variable} ${gotham.variable}  vsc-initialized flex min-h-screen min-w-full justify-between bg-white font-body text-semiblack`}

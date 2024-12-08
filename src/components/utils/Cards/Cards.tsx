@@ -26,8 +26,9 @@ export default function Card({
             height={80}
             style={{
               maxWidth: "100%",
-              height: "auto"
-            }} />
+              height: "auto",
+            }}
+          />
         </div>
         {(number && (
           <div className="flex flex-col items-center gap-2">

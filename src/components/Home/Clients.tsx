@@ -22,8 +22,9 @@ export default function Clients() {
                   height={240}
                   style={{
                     maxWidth: "100%",
-                    height: "auto"
-                  }} />
+                    height: "auto",
+                  }}
+                />
               </div>
             </div>
           </div>
@@ -37,8 +38,9 @@ export default function Clients() {
                   height={100}
                   style={{
                     maxWidth: "100%",
-                    height: "auto"
-                  }} />
+                    height: "auto",
+                  }}
+                />
                 <p className="font-heading text-4xl font-medium">Thdnr Group</p>
               </div>
             </div>
@@ -54,8 +56,9 @@ export default function Clients() {
                   height={129.93}
                   style={{
                     maxWidth: "100%",
-                    height: "auto"
-                  }} />
+                    height: "auto",
+                  }}
+                />
               </div>
             </div>
           </div>
