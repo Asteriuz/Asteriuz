@@ -100,7 +100,7 @@ export default function Hero() {
             <span className="relative z-20">Contate-me</span>
           </Link>
           <Link
-            href="Curriculo.pdf"
+            href="/Curriculo.pdf"
             target="_blank"
             className="material-bubble material-bubble-white relative rounded-lg bg-white px-5 py-3 uppercase text-primary xl:px-7 "
           >
