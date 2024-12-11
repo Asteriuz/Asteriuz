@@ -16,9 +16,7 @@ export default function Hero() {
         className="absolute h-full w-full brightness-[0.7]"
       ></canvas>
       <div className="relative flex h-full w-full flex-col items-center justify-center gap-7 xl:gap-8">
-        <div
-          className="hero-profile"
-        >
+        <div className="hero-profile">
           <Image
             src={Profile}
             alt="Profile"
@@ -93,12 +91,20 @@ export default function Hero() {
           </Link> */}
         </div>
         <div className="mt-2 flex items-center justify-center gap-5 text-sm font-medium xl:text-base">
-          <button className="material-bubble material-bubble-red relative rounded-lg bg-primary px-5 py-3 uppercase text-white xl:px-7">
+          <Link
+            href={"https://wa.me/5511997434003"}
+            target="_blank"
+            className="material-bubble material-bubble-red relative rounded-lg bg-primary px-5 py-3 uppercase text-white xl:px-7"
+          >
             <span className="relative z-20">Contate-me</span>
-          </button>
-          <button className="material-bubble material-bubble-white relative rounded-lg bg-white px-5 py-3 uppercase text-primary xl:px-7 ">
+          </Link>
+          <Link
+            href="/Curriculo.pdf"
+            target="_blank"
+            className="material-bubble material-bubble-white relative rounded-lg bg-white px-5 py-3 uppercase text-primary xl:px-7 "
+          >
             <span className="relative z-20">Meu Portfólio</span>
-          </button>
+          </Link>
         </div>
       </div>
       <Link
