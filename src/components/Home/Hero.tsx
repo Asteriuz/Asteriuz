@@ -23,7 +23,8 @@ export default function Hero() {
             className="rounded-full"
             width={246}
             height={246}
-            priority
+            priority={true}
+            loading="eager"
             style={{
               maxWidth: "100%",
               height: "auto",
@@ -99,7 +100,7 @@ export default function Hero() {
             <span className="relative z-20">Contate-me</span>
           </Link>
           <Link
-            href="/Curriculo.pdf"
+            href="/curriculo.pdf"
             target="_blank"
             className="material-bubble material-bubble-white relative rounded-lg bg-white px-5 py-3 uppercase text-primary xl:px-7 "
           >

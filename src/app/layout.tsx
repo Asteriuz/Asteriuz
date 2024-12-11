@@ -13,15 +13,13 @@ const poppins = Poppins({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-poppins",
-  weight: ["400", "500", "600", "700"],
+  weight: ["400", "500", "600"],
 });
 
 const gotham = localFont({
   src: [
     { path: "../../public/fonts/Gotham-Font/Gotham-Black.otf", weight: "700" },
-    { path: "../../public/fonts/Gotham-Font/GothamBold.ttf", weight: "600" },
     { path: "../../public/fonts/Gotham-Font/GothamMedium.ttf", weight: "500" },
-    { path: "../../public/fonts/Gotham-Font/GothamBook.ttf", weight: "400" },
   ],
   display: "swap",
   variable: "--font-gotham",

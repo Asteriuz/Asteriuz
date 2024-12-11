@@ -68,7 +68,7 @@ export default function Contact() {
               onSubmit={handleSubmit}
               className="flex h-full flex-col space-y-4"
             >
-              <h2 className="mb-1 text-2xl font-bold">Envie uma mensagem</h2>
+              <h2 className="mb-1 text-2xl font-semibold">Envie uma mensagem</h2>
               <input
                 type="text"
                 name="name"

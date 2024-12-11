@@ -149,7 +149,7 @@ export default function Curriculo() {
               title="Python 3 do Básico Ao Avançado"
               description="Dominío em Python 3, garantindo soluções rápidas, eficazes e automatizadas."
               image={PythonImg.src}
-              link="https://ude.my/UC-fba25b71-3441-4e33-8e8e-9cf43adc6944"
+              link="https://www.udemy.com/certificate/UC-fba25b71-3441-4e33-8e8e-9cf43adc6944/"
             />
             <CertificateCard
               title="Aplicações React com Typescript"
