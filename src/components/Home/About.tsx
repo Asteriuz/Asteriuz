@@ -107,7 +107,7 @@ export default function About() {
                 </p>
                 <div className="mt-2 flex items-center gap-5 text-base font-medium">
                   <Link
-                    href="/curriculo.pdf"
+                    href="Curriculo.pdf"
                     target="_blank"
                     className="group relative flex items-center justify-center gap-2 rounded-md bg-primary px-11 py-3 uppercase text-white"
                   >

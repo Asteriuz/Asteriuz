@@ -1,3 +1,4 @@
+import { log } from "console";
 import type { Config } from "tailwindcss";
 
 import defaultTheme from "tailwindcss/defaultTheme";
@@ -11,6 +12,7 @@ const config: Config = {
   daisyui: {
     // themes: ["dark"],
     styled: false,
+    logs: false,
   },
   safelist: [
     "text-pink-500",

@@ -293,12 +293,26 @@
 .hero-profile:after {
   content: "";
   position: absolute;
-  inset: -50px;
+  inset: -20px;
   background: radial-gradient(80px at left 150px top 75px, #e22f24 70%, #0000),
     radial-gradient(80px at right 150px bottom 75px, #ff6500 70%, #0000);
   filter: blur(80px);
-  opacity: 0.5;
+  opacity: 0.4;
   animation: var(--spin-animation);
+}
+
+@media (max-width: 1280px) {
+  .hero-profile:after {
+    inset: -20px;
+    background: radial-gradient(
+        60px at left 100px top 50px,
+        #e22f24 70%,
+        #0000
+      ),
+      radial-gradient(60px at right 100px bottom 50px, #ff6500 70%, #0000);
+    filter: blur(80px);
+    opacity: 0.3;
+  }
 }
 
 .hero-profile:before,
