@@ -73,7 +73,7 @@ export default function Hero() {
           </Link>
 
           <Link
-            href={"https://twitter.com/Asteriuz_"}
+            href={"https://wa.me/5511997434003"}
             target="_blank"
             className="rounded-full
               border border-transwhite bg-black p-2 transition-colors duration-300 ease-in hover:bg-primary"
