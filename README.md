@@ -21,7 +21,7 @@
     <img align="center" alt="CSS" height="40" width="40" src="https://i.imgur.com/tjPOPhB.png">&nbsp;
     <h4>Design</h4>
     <a href="Certificados/Photoshop.pdf"><img align="center" alt="Photoshop" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-original.svg"></a>&nbsp;
-    <a href="Certificados/Ilustrator.pdf"><img align="center" alt="Ilustrator" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-line.svg"></a>&nbsp;
+    <a href="Certificados/Ilustrator.pdf"><img align="center" alt="Ilustrator" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-original.svg"></a>&nbsp;
     <a href="Certificados/Premiere.pdf"><img align="center" alt="Premiere" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/premierepro/premierepro-original.svg"></a>&nbsp;
     <a href="Certificados/AfterEffects.pdf"><img align="center" alt="AfterEffects" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/aftereffects/aftereffects-original.svg"></a>&nbsp;
     <img align="center" alt="Figma" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg">
