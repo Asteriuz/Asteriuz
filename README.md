@@ -71,8 +71,8 @@
 <h1></h1>
 
 <div align="center" style="display: flex; align-items: center; justify-content: center;">
-  <img src="./img/snake.gif" width="40" alt="Snake GIF" style="vertical-align: middle;" />
-  <h3 style="display: inline; margin: 0;">Contribuições</h3>
+  <!-- <img src="./img/snake.gif" width="40" alt="Snake GIF" style="vertical-align: middle;" /> -->
+  <h3 style="display: inline; margin: 0;">🐍 Contribuições</h3>
 </div>
 
 <div align="center">
