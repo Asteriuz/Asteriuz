@@ -4,7 +4,7 @@
   <img alt="Logo" height="150" src="img/LogoMark.svg" style="border-radius: 20px; margin-bottom: 20px;" />
   <h1>✨ Olá, eu sou o Asteriuz! <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35"/></h1>
 
-  <p>Desenvolvedor apaixonado por código limpo, design bonito e experiências que encantam.</p>
+  <p>Desenvolvedor apaixonado por automações e organização.</p>
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=FF79C6&center=true&vCenter=true&width=435&lines=Full+Stack+Developer;UI%2FUX+Designer;Flutter+%26+React+Enthusiast)](https://git.io/typing-svg)
 
