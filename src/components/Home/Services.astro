@@ -1,0 +1,50 @@
+---
+import DesignImg from "@/assets/icons/services/design.webp";
+import CodeImg from "@/assets/icons/services/code.webp";
+import CreativeImg from "@/assets/icons/services/creative.webp";
+import PCImg from "@/assets/icons/services/pc.webp";
+import RocketImg from "@/assets/icons/services/rocket.webp";
+import SeoImg from "@/assets/icons/services/seo.webp";
+import SectionText from "../utils/SectionText.astro";
+import Card from "../utils/Cards/Cards.astro";
+---
+
+<section id="services" class="mx-auto flex w-full justify-center">
+  <div
+    class="relative flex w-full max-w-7xl flex-col items-center pt-12.5 xl:pt-25"
+  >
+    <SectionText firstWord="MEUS" lastWord="SERVIÇOS" bgWord="SERVIÇOS" />
+    <div class="grid w-full grid-cols-1 gap-x-6 gap-y-8 lg:grid-cols-3">
+      <Card
+        title="Design de Sites"
+        subtitle="Ofereço as últimas tendências de design, aprimorando a experiência do usuário."
+        icon={DesignImg}
+      />
+      <Card
+        title="Desenvolvimento Web"
+        subtitle="Gerencio todas as ações necessárias para garantir um site funcional e atualizado."
+        icon={CodeImg}
+      />
+      <Card
+        title="Design Criativo"
+        subtitle="Disponibilizo sempre três personalizações únicas sem custo adicional."
+        icon={CreativeImg}
+      />
+      <Card
+        title="Desenvolvimento de Apps"
+        subtitle="Realizo o rastreamento de aplicativos para corrigir falhas e otimizar a performance."
+        icon={PCImg}
+      />
+      <Card
+        title="Rápido & Otimizado"
+        subtitle="Asseguro o desempenho e a velocidade do seu site sempre no seu máximo."
+        icon={RocketImg}
+      />
+      <Card
+        title="Seo Master"
+        subtitle="Monitoro o tráfego para melhorar a visibilidade e atrair mais visitantes."
+        icon={SeoImg}
+      />
+    </div>
+  </div>
+</section>

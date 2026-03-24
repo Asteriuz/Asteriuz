@@ -1,0 +1,40 @@
+---
+import { Image } from 'astro:assets';
+import { ExternalLink } from "@lucide/astro";
+
+interface Props {
+  image: ImageMetadata;
+  title: string;
+  link: string;
+}
+
+const { image, title, link } = Astro.props;
+---
+
+<div
+  class="group relative w-full overflow-hidden rounded-lg shadow-md duration-300 hover:-translate-y-2 hover:shadow-xl"
+>
+  <a href={link} target="_blank" class="block h-full w-full">
+    <div class="relative aspect-video w-full">
+      <Image
+        class="overflow-hidden rounded-lg duration-300 ease-in group-hover:rounded-b-none"
+        src={image}
+        alt={`Imagem de Hero do site ${title}`}
+        width="1920"
+        height="1080"
+      />
+    </div>
+
+    <div
+      class="absolute inset-0 flex flex-col items-center justify-center gap-2 bg-black/70 opacity-0 duration-300 group-hover:opacity-100"
+    >
+      <h3 class="text-center text-2xl font-semibold text-white">{title}</h3>
+
+      <ExternalLink
+        size={40}
+        class="text-white transition-transform duration-300 group-hover:scale-110"
+        stroke-width={2.5}
+      />
+    </div>
+  </a>
+</div>

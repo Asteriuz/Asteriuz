@@ -1,0 +1,76 @@
+---
+interface Props {
+  title: string;
+  value: number;
+  color?: string;
+}
+
+const { title, value, color = "#e22f24" } = Astro.props;
+const radius = 42;
+const circumference = 2 * Math.PI * radius;
+
+const progress = circumference - (value / 100) * circumference;
+const isVisible = value > 0;
+
+const patternId = `pattern-${title.replace(/\s+/g, "-").toLowerCase()}`;
+---
+
+<div class="flex flex-col items-center gap-2">
+  <div class="flex w-28 items-center justify-center">
+    <svg viewBox="0 0 100 100" class="h-24 w-24">
+      <defs>
+        <pattern
+          id={patternId}
+          patternUnits="userSpaceOnUse"
+          width="20"
+          height="20"
+          patternTransform="rotate(45)"
+        >
+          <animate
+            attributeName="x"
+            from="0"
+            to="20"
+            dur="1s"
+            repeatCount="indefinite"></animate>
+          <rect width="20" height="20" fill={color}></rect>
+          <rect width="10" height="20" fill="rgba(255,255,255,0.3)"></rect>
+        </pattern>
+      </defs>
+
+      <circle
+        cx="50"
+        cy="50"
+        r={radius}
+        class="stroke-cinza"
+        stroke-width="12"
+        fill="none"
+        stroke-linecap="round"></circle>
+
+      <circle
+        cx="50"
+        cy="50"
+        r={radius}
+        stroke={`url(#${patternId})`}
+        stroke-width="12"
+        fill="none"
+        stroke-linecap="round"
+        stroke-dasharray={circumference}
+        stroke-dashoffset={progress}
+        transform="rotate(-90 50 50)"
+        style={{
+          transition: "stroke-dashoffset 0.5s ease-in-out",
+          opacity: isVisible ? 1 : 0,
+        }}></circle>
+
+      <text
+        x="50"
+        y="55"
+        text-anchor="middle"
+        class="fill-black text-lg font-semibold"
+      >
+        {Math.round(value)}%
+      </text>
+    </svg>
+  </div>
+  <p class="text-center font-semibold text-gray-700">{title}</p>
+</div>

@@ -1,0 +1,44 @@
+---
+import { Image } from "astro:assets";
+import type { ImageMetadata } from "astro";
+interface Props {
+  title?: string;
+  subtitle: string;
+  number?: number;
+  suffix?: string;
+  icon: ImageMetadata;
+}
+
+const { title, subtitle, number, suffix, icon } = Astro.props;
+---
+
+<div
+  class="group w-full rounded-lg p-6 shadow-float transition-all duration-300 ease-in hover:-translate-y-2 hover:shadow-xl xl:p-8 bg-card"
+>
+  <div class="flex flex-col items-center gap-x-4 gap-y-7">
+    <Image
+      src={icon}
+      alt={subtitle}
+      width="80"
+      height="80"
+      class="transition-transform duration-300 group-hover:scale-105"
+    />
+
+    {
+      number ? (
+        <div class="flex flex-col items-center gap-2 text-center">
+          <p class="text-3xl font-bold tracking-tight text-semiblack">
+            {number}
+            {suffix}
+          </p>
+          <p class="text-cinza-text">{subtitle}</p>
+        </div>
+      ) : (
+        <div class="flex flex-col items-center gap-2 text-center">
+          <h3 class="text-xl font-semibold text-semiblack">{title}</h3>
+          <p class="text-center text-base text-cinza-text">{subtitle}</p>
+        </div>
+      )
+    }
+  </div>
+</div>

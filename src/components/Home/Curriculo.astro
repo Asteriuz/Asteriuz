@@ -1,0 +1,175 @@
+---
+import {
+  Check,
+  GraduationCap,
+  Languages,
+  Code,
+  Cross,
+  Zap,
+  Hammer,
+} from "@lucide/astro";
+
+import SectionText from "../utils/SectionText.astro";
+import ResumeCards from "../utils/Cards/ResumeCards.astro";
+import BarProgress from "../utils/BarProgress.astro";
+import CircularProgress from "../utils/CircularProgress.astro";
+import VerticalTimelineWrapper from "../utils/VerticalTimelineWrapper.astro";
+import CertificateCard from "../utils/Cards/CertificateCard.astro";
+import CustomerExperienceImg from "../../assets/certificado/customer-experience.webp";
+import PythonImg from "../../assets/certificado/python.webp";
+import ReactImg from "../../assets/certificado/react.webp";
+
+const timelineFormationItems = [
+  {
+    title: "Engenharia de Software",
+    date: "FIAP / 2025 - 2027",
+    icon: GraduationCap,
+    list: [
+      "Criação de soluções completas, abrangendo frontend e backend.",
+      "Implementação de metodologias ágeis para entrega rápida e flexível.",
+    ],
+  },
+  {
+    title: "Análise e Desenvolvimento de Sistemas",
+    date: "FIAP / 2023 - 2024",
+    icon: GraduationCap,
+    list: [
+      "Criação de soluções completas, abrangendo frontend e backend.",
+      "Implementação de metodologias ágeis para entrega rápida e flexível.",
+    ],
+  },
+  {
+    title: "Curso de Inglês Avançado",
+    date: "Cultura Inglesa / 2014 - 2018",
+    icon: Languages,
+    list: [
+      "Compreensão avançada da língua inglesa, tanto oral quanto escrita.",
+      "Capacidade de analisar textos literários e acadêmicos.",
+    ],
+  },
+];
+
+const timelineExperienceItems = [
+  {
+    title: "Clínica Plena",
+    date: "Freelancer",
+    icon: Cross,
+    list: [
+      "Desenvolvimento e lançamento do site da Clínica Plena",
+      "Registro de domínio, otimização de SEO e performance",
+      "https://clinicaplenatatuape.com.br/",
+    ],
+  },
+  {
+    title: "Thndr Group",
+    date: "Freelancer",
+    icon: Zap,
+    list: [
+      "Desenvolvimento e lançamento do site da Thndr Group",
+      "Registro de domínio, otimização de SEO e performance",
+      "https://thndr.com.br/",
+    ],
+  },
+  {
+    title: "Ferpan Comércio de Ferros",
+    date: "Freelancer",
+    icon: Hammer,
+    list: [
+      "Desenvolvimento e lançamento do site da Ferpan",
+      "Registro de domínio, otimização de SEO e performance",
+      "https://ferpancomerciodeferro.com.br/",
+    ],
+  },
+];
+
+const knowledge = [
+  "Fornecimento para Design e Desenvolvimento",
+  "Vontade de aprender novas Tecnologias",
+  "Habilidades de resolução de problemas e coordenação",
+  "Desenvolvimento de Aplicativos Móveis e Websites",
+  "Trabalho em equipe / Gerenciamento de Equipe",
+  "Flexível com Condições de Trabalho",
+  "Excelente habilidade de escuta e rápida aprendizagem",
+  "Esforço para aplicar meus conhecimentos e habilidades",
+];
+---
+
+<section id="curriculo" class="mx-auto flex w-full justify-center">
+  <div
+    class="relative flex w-full max-w-7xl flex-col items-center pt-12.5 xl:pt-25"
+  >
+    <SectionText firstWord="MEU" lastWord="CURRÍCULO" bgWord="CURRÍCULO" />
+
+    <div class="grid w-full grid-cols-1 gap-x-6 gap-y-8 xl:grid-cols-2">
+      <ResumeCards title="Formação Acadêmica"
+        ><VerticalTimelineWrapper items={timelineFormationItems} /></ResumeCards
+      >
+      <ResumeCards title="Experiência Profissional"
+        ><VerticalTimelineWrapper
+          items={timelineExperienceItems}
+        /></ResumeCards
+      >
+
+      <ResumeCards title="Habilidades de Programação">
+        <div class="flex flex-col gap-5">
+          <BarProgress title="React & Next.js" value={90} />
+          <BarProgress title="TailwindCSS" value={95} />
+          <BarProgress title="Python" value={85} />
+          <BarProgress title="TypeScript" value={90} />
+        </div>
+      </ResumeCards>
+
+      <ResumeCards title="Fluência em Idiomas">
+        <div class="flex flex-col gap-5">
+          <BarProgress title="Português" value={100} />
+          <BarProgress title="Inglês" value={90} />
+          <BarProgress title="Espanhol" value={30} />
+          <BarProgress title="Japonês" value={30} />
+        </div>
+      </ResumeCards>
+
+      <ResumeCards title="Competências Profissionais">
+        <div class="grid grid-cols-2 grid-rows-2 gap-y-8 items-center">
+          <CircularProgress title="Web Design" value={80} />
+          <CircularProgress title="Web Development" value={90} />
+          <CircularProgress title="Graphic Design" value={70} />
+          <CircularProgress title="Seo Marketing" value={85} />
+        </div>
+      </ResumeCards>
+
+      <ResumeCards title="Atributos & Expertise">
+        <ul class="flex h-full flex-col justify-between gap-y-3">
+          {
+            knowledge.map((item) => (
+              <li class="flex items-center gap-2">
+                <Check class="shrink-0 text-2xl text-primary" />
+                <p class="text-[15px] xl:text-base">{item}</p>
+              </li>
+            ))
+          }
+        </ul>
+      </ResumeCards>
+
+      <div class="grid gap-5 lg:grid-cols-3 xl:col-span-2">
+        <CertificateCard
+          title="Customer Experience Management"
+          description="Gestão de Experiência do Cliente, garantindo a satisfação e fidelização."
+          image={CustomerExperienceImg}
+          link="https://on.fiap.com.br/local/nanocourses/validar-certificado/?chave=ba501d43f4a8e52f46d56c96a8d86ccf"
+        />
+        <CertificateCard
+          title="Python 3 do Básico Ao Avançado"
+          description="Dominío em Python 3, garantindo soluções rápidas, eficazes e automatizadas."
+          image={PythonImg}
+          link="https://www.udemy.com/certificate/UC-fba25b71-3441-4e33-8e8e-9cf43adc6944/"
+        />
+        <CertificateCard
+          title="Aplicações React com Typescript"
+          description="Desenvolvimento de aplicações web com React e Typescript."
+          image={ReactImg}
+          link="https://cursos.alura.com.br/user/asteriuz/degree-react-ts-v581770-581770/certificate"
+        />
+      </div>
+    </div>
+  </div>
+</section>

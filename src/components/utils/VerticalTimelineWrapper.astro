@@ -1,0 +1,58 @@
+---
+import { type Icon as IconType } from "@lucide/astro";
+
+// Timeline.astro
+interface TimelineItem {
+  title: string;
+  date: string;
+  // No Astro, podemos passar ícones como strings HTML ou usar pacotes nativos
+  icon: typeof IconType;
+  list: string[];
+}
+
+interface Props {
+  items: TimelineItem[];
+}
+
+const { items } = Astro.props;
+---
+
+<div
+  class="relative w-full max-w-3xl border-l-4 border-cinza-text/20 ml-4 py-2 xl:pr-8 pr-4"
+>
+  <div class="flex flex-col gap-8">
+    {
+      items.map((item) => (
+        <div class="relative pl-8 group">
+          <div class="absolute -left-5.5 -top-1 flex h-10 w-10 items-center justify-center rounded-full bg-primary text-white shadow-lg ring-6 ring-white p-1.5">
+            <item.icon size={28} />
+          </div>
+
+          <div class="relative rounded-lg bg-white p-5 shadow-float transition-transform duration-300 ease-in-out group-hover:-translate-y-1 transform-gpu before:absolute before:-left-1.75 before:top-2 before:h-0 before:w-0 before:border-y-[7px] before:border-r-[7px] before:border-y-transparent before:border-r-primary before:content-['']">
+            <h3 class="mb-1 text-xl font-semibold">{item.title}</h3>
+            <p class="text-sm text-primary mb-3">{item.date}</p>
+
+            <ul class="flex flex-col gap-1 pl-5 text-sm list-disc overflow-hidden ">
+              {item.list.map((li) => (
+                <li>
+                  {li.startsWith("https://") ? (
+                    <a
+                      href={li}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="text-primary hover:underline"
+                    >
+                      {li.replace("https://", "").replace(/\/$/, "")}
+                    </a>
+                  ) : (
+                    li
+                  )}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      ))
+    }
+  </div>
+</div>

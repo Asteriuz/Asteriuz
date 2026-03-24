@@ -1,0 +1,72 @@
+<div class="fixed right-4 top-4 z-70 block xl:hidden">
+  <button
+    id="drawer-button"
+    aria-label="Abrir menu"
+    class="z-70 rounded-full bg-primary p-2 shadow-float"
+  >
+    <svg
+      id="drawer-open-icon"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      class="h-8 w-8 text-white"
+      aria-hidden="true"
+    >
+      <path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round"></path>
+    </svg>
+
+    <svg
+      id="drawer-close-icon"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      class="hidden h-8 w-8 scale-125 text-white"
+      aria-hidden="true"
+    >
+      <path d="M6 6l12 12M18 6l-12 12" stroke-linecap="round"></path>
+    </svg>
+  </button>
+</div>
+
+<script>
+  /* -------------------------------------------------------------------------- */
+  /*                                 Drawer Menu                                */
+  /* -------------------------------------------------------------------------- */
+  let drawerButton = document.getElementById("drawer-button");
+  let drawerOpenIcon = document.getElementById("drawer-open-icon");
+  let drawerCloseIcon = document.getElementById("drawer-close-icon");
+  let overlay = document.getElementById("overlay");
+  let nav = document.getElementById("nav");
+
+  function toggleButtonIcons() {
+    if (drawerOpenIcon && drawerCloseIcon) {
+      drawerOpenIcon.classList.toggle("hidden");
+      drawerCloseIcon.classList.toggle("hidden");
+    }
+  }
+  
+  drawerButton.addEventListener("click", () => {
+    nav.classList.toggle("-translate-x-full");
+    overlay.classList.toggle("hidden");
+    toggleButtonIcons();
+  });
+
+  overlay.addEventListener("click", () => {
+    overlay.classList.add("hidden");
+    nav.classList.add("-translate-x-full");
+    drawerOpenIcon.classList.remove("hidden");
+    drawerCloseIcon.classList.add("hidden");
+  });
+
+  let navLinks = document.querySelectorAll(".nav-link");
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      overlay.classList.add("hidden");
+      nav.classList.add("-translate-x-full");
+      drawerOpenIcon.classList.remove("hidden");
+      drawerCloseIcon.classList.add("hidden");
+    });
+  });
+</script>

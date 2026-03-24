@@ -1,0 +1,344 @@
+---
+import { Image } from "astro:assets";
+import {
+  Sparkles,
+  Download,
+  MessageCircle,
+  Mail,
+  Globe,
+  Briefcase,
+  BookOpen,
+  GraduationCap,
+  MapPin,
+  Calendar,
+  Puzzle,
+} from "@lucide/astro";
+import WhatsappLogo from "@/assets/icons/brands/whatsapp.svg";
+import GithubLogo from "@/assets/icons/brands/github.svg";
+import LinkedinLogo from "@/assets/icons/brands/linkedin-in.svg";
+
+import AboutImage from "@/assets/logo/LogoMark.svg";
+import AlvoImg from "@/assets/icons/about/alvo.webp";
+import CursoImg from "@/assets/icons/about/curso.webp";
+import ExpImg from "@/assets/icons/about/exp.webp";
+import PessoaImg from "@/assets/icons/about/pessoa.webp";
+import SectionText from "../utils/SectionText.astro";
+import Card from "../utils/Cards/Cards.astro";
+---
+
+<section id="about" class="mx-auto flex w-full justify-center">
+  <div
+    class="relative flex w-full max-w-7xl flex-col items-center pt-12.5 xl:pt-25"
+  >
+    <SectionText firstWord="SOBRE" lastWord="MIM" bgWord="SOBRE" />
+
+    <div class="flex max-w-full flex-col gap-8">
+      <div
+        class="flex max-w-7xl flex-col items-center justify-center gap-6 md:flex-row"
+      >
+        <div class="relative z-10 overflow-hidden rounded-lg p-5 shadow-float">
+          <div
+            id="about-image"
+            class="relative shrink-0 rounded-lg bg-semiblack p-4"
+          >
+            <Image
+              src={AboutImage}
+              width="700"
+              height="700"
+              alt="Asteriuz Logo"
+              class="h-auto w-auto rounded-lg object-cover"
+            />
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col justify-center rounded-xl bg-card p-6 shadow-float border border-cinza transition-all hover:border-primary/30 xl:p-10 xl:w-[60%]"
+        >
+          <div
+            class="flex flex-col gap-5 text-base leading-relaxed text-cinza-text"
+          >
+            <h3
+              class="font-heading text-2xl font-bold tracking-tight text-semiblack md:text-3xl"
+            >
+              Olá, eu sou <span class="text-primary"
+                >Augusto Barcelos Barros</span
+              >
+            </h3>
+            <p>
+              Sou um <strong class="font-bold text-primary"
+                >Full-Stack Developer</strong
+              > especializado na criação de <span
+                class="font-medium text-semiblack underline decoration-primary/50 decoration-2 max-md:underline-offset-2 md:underline-offset-4"
+                >Websites Modernos</span
+              >. Transformo ideias complexas em soluções <strong
+                class="font-medium text-semiblack"
+                >eficientes, responsivas e de código limpo</strong
+              >.
+            </p>
+            <p>
+              Focado 100% na <span
+                class="rounded-md bg-primary/10 px-1.5 py-0.5 font-medium text-primary"
+                >experiência do usuário</span
+              > e em resultados reais, ofereço suporte de ponta a ponta. Estou disponível
+              para projetos <strong class="font-semibold text-semiblack"
+                >freelance</strong
+              > e <strong>oportunidades de trabalho</strong>.
+            </p>
+            <p
+              class="text-center text-lg font-medium text-semiblack/90 mb-4 mt-2"
+            >
+              <Sparkles size={20} class="inline text-primary mr-1" />
+              <span class="inline-block relative">
+                Vamos criar algo incrível juntos?
+                <span
+                  class="absolute left-0 -bottom-1 h-0.75 w-full bg-primary/30 rounded-full origin-left transition-transform duration-300 ease-out group-hover:scale-x-100 group-hover:bg-primary/40"
+                ></span>
+              </span>
+            </p>
+            <div
+              class="mt-2 flex w-full items-center gap-5 text-base font-medium"
+            >
+              <a
+                href="/Curriculo.pdf"
+                target="_blank"
+                class="group relative flex w-full items-center justify-center gap-2 rounded-md bg-primary px-11 py-3 uppercase text-white"
+              >
+                <div class="relative flex items-center">
+                  <Download
+                    size={28}
+                    class="absolute -left-7 translate-y-8 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100 text-white"
+                  />
+                  <p
+                    class="inline-block transition-transform duration-300 ease-in-out group-hover:translate-x-4"
+                  >
+                    DOWNLOAD CV
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="grid w-full grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 font-body"
+      >
+        <div
+          class="flex flex-col justify-between rounded-xl bg-card p-6 shadow-float border border-cinza transition-all hover:border-primary/30 lg:col-span-1"
+        >
+          <h4
+            class="mb-5 font-heading text-lg font-bold tracking-wide text-semiblack"
+          >
+            Contato & Redes
+          </h4>
+
+          <div class="flex flex-col gap-3">
+            <a
+              href="tel:+5511997434003"
+              class="group flex items-center gap-4 rounded-lg bg-cinza/30 p-3 text-cinza-text transition-colors hover:bg-primary/10 hover:text-primary"
+            >
+              <MessageCircle
+                size={20}
+                class="transition-transform group-hover:scale-110"
+              />
+              <span class="text-sm font-medium">+55 11 99743-4003</span>
+            </a>
+            <a
+              href="mailto:augustobb@live.com"
+              class="group flex items-center gap-4 rounded-lg bg-cinza/30 p-3 text-cinza-text transition-colors hover:bg-primary/10 hover:text-primary"
+            >
+              <Mail
+                size={20}
+                class="transition-transform group-hover:scale-110"
+              />
+              <span class="text-sm font-medium">augustobb@live.com</span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/asteriuz/"
+              target="_blank"
+              class="group flex items-center gap-4 rounded-lg bg-cinza/30 p-3 text-cinza-text transition-colors hover:bg-primary/10 hover:text-primary"
+            >
+              <LinkedinLogo
+                class="transition-transform group-hover:scale-110 w-5 h-5 text-cinza-text group-hover:text-primary"
+              />
+              <span class="text-sm font-medium">Linkedin - @Asteriuz</span>
+            </a>
+            <a
+              href="https://github.com/Asteriuz"
+              target="_blank"
+              class="group flex items-center gap-4 rounded-lg bg-cinza/30 p-3 text-cinza-text transition-colors hover:bg-primary/10 hover:text-primary"
+            >
+              <GithubLogo
+                class="transition-transform group-hover:scale-110 w-5 h-5 text-cinza-text group-hover:text-primary"
+              />
+              <span class="text-sm font-medium">Github - @Asteriuz</span>
+            </a>
+            <a
+              href="https://asteriuz.com.br"
+              target="_blank"
+              class="group flex items-center gap-4 rounded-lg bg-cinza/30 p-3 text-cinza-text transition-colors hover:bg-primary/10 hover:text-primary"
+            >
+              <Globe
+                size={20}
+                class="transition-transform group-hover:scale-110"
+              />
+              <span class="text-sm font-medium">asteriuz.com.br</span>
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col justify-between rounded-xl bg-card p-6 shadow-float border border-cinza transition-all hover:border-primary/30 lg:col-span-1"
+        >
+          <h4
+            class="mb-5 font-heading text-lg font-bold tracking-wide text-semiblack"
+          >
+            Educação & Experiência
+          </h4>
+
+          <div class="flex h-full flex-col justify-center gap-6">
+            <div class="flex items-center gap-4">
+              <div
+                class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary"
+              >
+                <BookOpen size={24} />
+              </div>
+              <div>
+                <p class="text-sm text-cinza-text">Cursando</p>
+                <p class="text-base font-medium text-semiblack">
+                  Engenharia de Software
+                </p>
+                <p class="text-sm font-semibold text-primary">FIAP</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-4">
+              <div
+                class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary"
+              >
+                <GraduationCap size={24} />
+              </div>
+              <div>
+                <p class="text-sm text-cinza-text">Formado</p>
+                <p class="text-base font-medium text-semiblack">
+                  Análise e Desenvolvimento de Sistemas
+                </p>
+                <p class="text-sm font-semibold text-primary">FIAP</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-4">
+              <div
+                class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary"
+              >
+                <Briefcase size={24} />
+              </div>
+              <div>
+                <p class="text-sm text-cinza-text">Experiência</p>
+                <p class="text-base font-medium text-semiblack">
+                  +5 anos programando
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col justify-between rounded-xl bg-card p-6 shadow-float border border-cinza transition-all hover:border-primary/30 lg:col-span-1"
+        >
+          <h4
+            class="mb-5 font-heading text-lg font-bold tracking-wide text-semiblack"
+          >
+            Perfil
+          </h4>
+
+          <div class="flex h-full flex-col justify-center gap-6">
+            <div class="flex items-center gap-4">
+              <div
+                class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-cinza/50 text-cinza-text"
+              >
+                <Globe size={22} />
+              </div>
+              <div>
+                <p class="text-sm text-cinza-text">Idiomas</p>
+                <p class="text-base font-medium text-semiblack">
+                  Português, Inglês
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-4">
+              <div
+                class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-cinza/50 text-cinza-text"
+              >
+                <MapPin size={22} />
+              </div>
+              <div>
+                <p class="text-sm text-cinza-text">Localização</p>
+                <p class="text-base font-medium text-semiblack">
+                  São Paulo, SP
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-4">
+              <div
+                class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-cinza/50 text-cinza-text"
+              >
+                <Calendar size={22} />
+              </div>
+              <div>
+                <p class="text-sm text-cinza-text">Idade</p>
+                <p class="text-base font-medium text-semiblack">
+                  23 anos <span class="text-xs font-normal text-cinza-text"
+                    >(Dez/2002)</span
+                  >
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-4">
+              <div
+                class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-cinza/50 text-cinza-text"
+              >
+                <Puzzle size={22} />
+              </div>
+              <div>
+                <p class="text-sm text-cinza-text">Hobbies</p>
+                <p class="text-base font-medium text-semiblack">
+                  Livros, Calistenia
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 gap-4 lg:grid-cols-4">
+        <Card
+          subtitle="Projetos concluídos"
+          number={8}
+          suffix="+"
+          icon={AlvoImg}
+        />
+        <Card
+          subtitle="Clientes satisfeitos"
+          number={50}
+          suffix="+"
+          icon={PessoaImg}
+        />
+        <Card
+          subtitle="Cursos realizados"
+          number={10}
+          suffix="+"
+          icon={CursoImg}
+        />
+        <Card
+          subtitle="Anos de experiência"
+          number={4}
+          suffix="+"
+          icon={ExpImg}
+        />
+      </div>
+    </div>
+  </div>
+</section>

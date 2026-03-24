@@ -1,0 +1,136 @@
+---
+import { Image } from "astro:assets";
+import Profile from "@/assets/profile/Profile.webp";
+import HeaderLink from "./HeaderLink.astro";
+import {
+  House,
+  User,
+  LayoutGrid,
+  FileText,
+  Briefcase,
+  Mail,
+  type Icon as IconType,
+} from "@lucide/astro";
+
+type MenuItem = {
+  name: string;
+  href: string;
+  icon: typeof IconType;
+};
+
+const navItems: MenuItem[] = [
+  {
+    name: "Home",
+    href: "#hero",
+    icon: House,
+  },
+  {
+    name: "Sobre",
+    href: "#about",
+    icon: User,
+  },
+  {
+    name: "Serviços",
+    href: "#services",
+    icon: LayoutGrid,
+  },
+  {
+    name: "Currículo",
+    href: "#curriculo",
+    icon: FileText,
+  },
+  {
+    name: "Portfólio",
+    href: "#portfolio",
+    icon: Briefcase,
+  },
+  {
+    name: "Contato",
+    href: "#contact",
+    icon: Mail,
+  },
+];
+---
+
+<div
+  id="overlay"
+  class="fixed inset-0 z-50 hidden bg-black/50 transition-all duration-500 ease-in-out"
+>
+</div>
+<nav
+  id="nav"
+  class="fixed z-50 h-screen w-64 -translate-x-full flex-col items-center bg-white shadow-xl transition-all duration-300 ease-in-out xl:z-30 xl:flex xl:w-72 xl:translate-x-0"
+>
+  <div class="flex h-full w-full flex-col">
+    <div
+      class="side-menu-avatar relative flex shrink-0 flex-col items-center justify-center gap-5 overflow-hidden py-3 tall:py-7"
+    >
+      <a
+        class="flex w-32 shrink-0 items-center justify-center overflow-hidden rounded-full border-4 border-semiblack bg-semiblack shadow-lg tall:w-36"
+        href="#hero"
+      >
+        <Image
+          src={Profile}
+          alt="Profile"
+          class="rounded-full transition-all duration-500 ease-in-out hover:scale-110"
+          width="320"
+          height="320"
+          loading="eager"
+        />
+      </a>
+      <h2 class="text-center text-lg font-semibold">Augusto Barcelos Barros</h2>
+    </div>
+
+    <div class="divider"></div>
+
+    <div
+      class="ml-6 flex flex-1 flex-col gap-7 py-4 tall:gap-9 tall:py-7 xl:ml-10"
+    >
+      <!-- <HeaderLink title="Home" link="#hero" icon="/" />
+      <HeaderLink
+        title="Sobre"
+        link="#about"
+        icon="M12 12a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9zm-7.5 9a7.5 7.5 0 1 1 15 0"
+      />
+      <HeaderLink
+        title="Serviços"
+        link="#services"
+        icon="M10.5 6h-6v6h6V6zm9 0h-6v6h6V6zm-9 9h-6v6h6v-6zm9 0h-6v6h6v-6z"
+      />
+      <HeaderLink
+        title="Currículo"
+        link="#curriculo"
+        icon="M6 3.75h9l3 3V20.25a.75.75 0 0 1-.75.75h-10.5A.75.75 0 0 1 6 20.25V3.75zm3.75 8.25h4.5m-7.5 3h7.5"
+      />
+      <HeaderLink
+        title="Portfólio"
+        link="#portfolio"
+        icon="M3.75 6.75h16.5v10.5H3.75V6.75zm3 13.5h10.5"
+      />
+      <HeaderLink
+        title="Contato"
+        link="#contact"
+        icon="M3.75 6.75h16.5v10.5H3.75V6.75zm0 0L12 12l8.25-5.25"
+      /> -->
+      {
+        navItems.map((item) => (
+          <HeaderLink title={item.name} href={item.href} icon={item.icon} />
+        ))
+      }
+    </div>
+
+    <div
+      class="ml-6 flex flex-col justify-center gap-1 py-7 text-xs tall:text-sm xl:ml-10"
+    >
+      <p>
+        © 2024 <a
+          href="https://github.com/Asteriuz"
+          target="_blank"
+          class="underline decoration-primary transition-all duration-500 ease-in-out hover:text-primary"
+          >Asteriuz</a
+        >
+      </p>
+      <p>Todos os direitos reservados</p>
+    </div>
+  </div>
+</nav>

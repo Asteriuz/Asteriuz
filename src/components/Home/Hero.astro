@@ -1,0 +1,371 @@
+---
+import { Image } from "astro:assets";
+import Profile from "@/assets/profile/Profile.webp";
+import GithubLogo from "@/assets/icons/brands/github.svg";
+import LinkedinLogo from "@/assets/icons/brands/linkedin-in.svg";
+import WhatsappLogo from "@/assets/icons/brands/whatsapp.svg";
+---
+
+<section
+  id="hero"
+  class="relative z-40 flex h-screen w-full flex-col overflow-hidden bg-black"
+>
+  <canvas id="matrix-bg" class="absolute h-full w-full brightness-[0.7]"
+  ></canvas>
+
+  <div
+    class="relative flex h-full w-full flex-col items-center justify-center gap-7 xl:gap-8"
+  >
+    <div class="hero-profile">
+      <Image
+        src={Profile}
+        alt="Profile"
+        width="246"
+        height="246"
+        class="rounded-full"
+        loading="eager"
+      />
+    </div>
+
+    <div class="flex flex-col items-center justify-center gap-3 xl:gap-4">
+      <h1
+        class="text-center font-heading text-3xl font-bold tracking-wider text-white xl:text-5xl"
+      >
+        Augusto Barcelos Barros
+      </h1>
+      <h2
+        class="font-heading text-lg font-medium tracking-wide text-white flex gap-2 xl:text-2xl"
+      >
+        <span>Eu sou</span>
+        <span id="typewriter" class="text-primary font-bold text-left"></span>
+        <span class="animate-pulse text-white -ml-2">|</span>
+      </h2>
+    </div>
+
+    <div class="flex items-center justify-center gap-5">
+      <a
+        href="https://github.com/Asteriuz"
+        target="_blank"
+        aria-label="Github"
+        class="rounded-full border border-transwhite bg-black p-2 transition-colors duration-300 ease-in-out hover:bg-primary"
+      >
+        <GithubLogo class="h-8 w-8 text-white" />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/asteriuz/"
+        target="_blank"
+        aria-label="Linkedin"
+        class="rounded-full border border-transwhite bg-black p-2 transition-colors duration-300 ease-in hover:bg-primary"
+      >
+        <LinkedinLogo class="h-8 w-8 text-white" />
+      </a>
+      <a
+        href="https://wa.me/5511997434003"
+        target="_blank"
+        aria-label="Whatsapp"
+        class="rounded-full border border-transwhite bg-black p-2 transition-colors duration-300 ease-in hover:bg-primary"
+      >
+        <WhatsappLogo class="h-8 w-8 text-white" />
+      </a>
+    </div>
+
+    <div
+      class="mt-2 flex items-center justify-center gap-5 text-sm font-medium xl:text-base"
+    >
+      <a
+        href="https://wa.me/5511997434003"
+        target="_blank"
+        class="material-bubble material-bubble-red relative rounded-lg bg-primary px-5 py-3 uppercase text-white xl:px-7"
+      >
+        <span class="relative z-20">Contate-me</span>
+      </a>
+      <a
+        href="/Curriculo.pdf"
+        target="_blank"
+        class="material-bubble material-bubble-white relative rounded-lg bg-white px-5 py-3 uppercase text-primary xl:px-7"
+      >
+        <span class="relative z-20">Meu Currículo</span>
+      </a>
+    </div>
+  </div>
+
+  <a
+    href="#about"
+    aria-label="Scrolle para baixo para saber mais"
+    class="scroll-down-arrow-hero absolute bottom-3 left-1/2 z-40 mx-auto hidden -translate-x-1/2 cursor-pointer text-center tall:block"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="ionicon relative bottom-0.5 w-14 animate-bounce text-white"
+      viewBox="0 0 512 512"
+    >
+      <path
+        class="fill-none"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="48"
+        d="M112 184l144 144 144-144"></path>
+    </svg>
+  </a>
+</section>
+
+<script>
+  var canvasMatrix = document.getElementById("matrix-bg");
+  var ctx = canvasMatrix.getContext("2d");
+
+  // Function to initialize the canvas and drops
+  function initializeCanvas() {
+    // Making the canvas full screen
+    canvasMatrix.height = globalThis.innerHeight;
+    canvasMatrix.width = globalThis.innerWidth;
+
+    // Calculate number of columns for the rain
+    columns = canvasMatrix.width / font_size;
+
+    // Reinitialize the drops array
+    drops = [];
+    for (var x = 0; x < columns; x++) {
+      drops[x] = 1;
+    }
+  }
+
+  // Chinese characters - taken from the unicode charset
+  var matrix =
+    "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%+-/~{[|`]}";
+  // Converting the string into an array of single characters
+  matrix = matrix.split("");
+
+  var font_size = 14;
+  var columns; // Number of columns for the rain
+  var drops = []; // Array of drops
+
+  // Initialize canvas and drops
+  initializeCanvas();
+
+  // Drawing the characters
+  function draw() {
+    // Black BG for the canvas
+    // Translucent BG to show trail
+    ctx.fillStyle = "rgba(0, 0, 0, 0.04)";
+    ctx.fillRect(0, 0, canvasMatrix.width, canvasMatrix.height);
+
+    ctx.fillStyle = "#e22f24"; // Red text
+    ctx.font = font_size + "px arial";
+    // Looping over drops
+    for (var i = 0; i < drops.length; i++) {
+      // A random character to print
+      var text = matrix[Math.floor(Math.random() * matrix.length)];
+      // x = i*font_size, y = value of drops[i]*font_size
+      ctx.fillText(text, i * font_size, drops[i] * font_size);
+
+      // Sending the drop back to the top randomly after it has crossed the screen
+      // Adding a randomness to the reset to make the drops scattered on the Y axis
+      if (drops[i] * font_size > canvasMatrix.height && Math.random() > 0.975) {
+        drops[i] = 0;
+      }
+
+      // Incrementing Y coordinate
+      drops[i]++;
+    }
+  }
+
+  // Redraw on browser resize
+  window.addEventListener("resize", () => {
+    initializeCanvas();
+  });
+
+  // Run the animation
+  setInterval(draw, 35);
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const texts = ["Full-Stack Developer", "UX/UI Designer", "Programador"];
+    let count = 0;
+    let index = 0;
+    let isDeleting = false;
+    const typeElement = document.getElementById("typewriter");
+
+    function type() {
+      if (!typeElement) return;
+      const currentText = texts[count % texts.length];
+
+      if (isDeleting) {
+        typeElement.textContent = currentText.substring(0, index - 1);
+        index--;
+      } else {
+        typeElement.textContent = currentText.substring(0, index + 1);
+        index++;
+      }
+
+      let typingSpeed = isDeleting ? 50 : 100;
+
+      if (!isDeleting && index === currentText.length) {
+        typingSpeed = 2000;
+        isDeleting = true;
+      } else if (isDeleting && index === 0) {
+        isDeleting = false;
+        count++;
+        typingSpeed = 500;
+      }
+
+      setTimeout(type, typingSpeed);
+    }
+
+    type();
+  });
+</script>
+
+<style>
+  .material-bubble {
+    overflow: hidden;
+    box-shadow: none;
+    position: relative;
+    transition:
+      color 0.5s,
+      transform 0.2s,
+      background-color 0.2s;
+    border: 2px solid transparent;
+  }
+
+  .material-bubble::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    transition: opacity 0.3s;
+  }
+
+  .material-bubble::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transform: translate(-10px, -70px) scale(0.1);
+    opacity: 0;
+    transition:
+      transform 0.3s,
+      opacity 0.3s,
+      background-color 0.3s;
+  }
+
+  .material-bubble:hover::before {
+    opacity: 0;
+  }
+
+  .material-bubble:hover::after {
+    opacity: 1;
+    transform-origin: 100px 100px;
+    transform: scale(1) translate(-10px, -70px);
+  }
+
+  .material-bubble-white {
+    background-color: #ffffff;
+    color: var(--primary);
+  }
+
+  .material-bubble-white:hover {
+    color: #ffffff;
+  }
+
+  .material-bubble-white::after {
+    background-color: var(--primary);
+  }
+
+  .material-bubble-red {
+    background-color: var(--primary);
+  }
+
+  .material-bubble-red:hover {
+    color: var(--primary);
+  }
+
+  .material-bubble-red::after {
+    background-color: #fff;
+  }
+
+  @keyframes spin-profile {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .hero-profile {
+    margin-bottom: 8px;
+    width: 258px;
+    height: 258px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 0;
+    transition: 0.3s;
+    box-shadow: 0 0 0 1px #666;
+  }
+
+  .hero-profile::before {
+    content: "";
+    position: absolute;
+    inset: -4px;
+    padding: 6px;
+    border-radius: 50%;
+    background: conic-gradient(
+      #e22f24,
+      #0000 30deg 120deg,
+      #ff6500 150deg 180deg,
+      #0000 210deg 300deg,
+      #e22f24 330deg
+    );
+    -webkit-mask:
+      linear-gradient(#000 0 0) content-box,
+      linear-gradient(#000 0 0);
+    mask:
+      linear-gradient(#000 0 0) content-box,
+      linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: intersect;
+    animation: var(--spin-animation);
+  }
+
+  .hero-profile::after {
+    content: "";
+    position: absolute;
+    inset: -20px;
+    background:
+      radial-gradient(80px at left 150px top 75px, #e22f24 70%, #0000),
+      radial-gradient(80px at right 150px bottom 75px, #ff6500 70%, #0000);
+    filter: blur(80px);
+    opacity: 0.4;
+    animation: var(--spin-animation);
+  }
+
+  .hero-profile > img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  @media (max-width: 1280px) {
+    .hero-profile {
+      margin-bottom: 0;
+      width: 208px;
+      height: 208px;
+    }
+
+    .hero-profile::after {
+      inset: -20px;
+      background:
+        radial-gradient(60px at left 100px top 50px, #e22f24 70%, #0000),
+        radial-gradient(60px at right 100px bottom 50px, #ff6500 70%, #0000);
+      opacity: 0.3;
+    }
+  }
+</style>

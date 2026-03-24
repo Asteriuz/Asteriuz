@@ -1,0 +1,39 @@
+---
+import SectionText from "../utils/SectionText.astro";
+import ProjectCard from "../utils/Cards/ProjectCard.astro";
+import ClinicaPlena from "../../assets/projects/clinica-plena.png";
+import VivaPlena from "../../assets/projects/clinica-viva_plena.png";
+import Thndr from "../../assets/projects/thndr.png";
+import Ferpan from "../../assets/projects/ferpan.png";
+import Asteriuz from "../../assets/projects/asteriuz.png";
+---
+
+<section id="portfolio" class="mx-auto flex w-full justify-center">
+  <div
+    class="relative flex w-full max-w-7xl flex-col items-center pt-12.5 xl:pt-25"
+  >
+    <SectionText firstWord="MEU" lastWord="PORTFÓLIO" bgWord="PORTFÓLIO" />
+    <div class="grid gap-10 md:grid-cols-2 xl:col-span-2">
+      <ProjectCard
+        title="Viva Plena"
+        image={VivaPlena}
+        link="https://viva-plena.pages.dev"
+      />  
+      <ProjectCard
+        title="Thndr Group"
+        image={Thndr}
+        link="https://thndr.com.br"
+      />
+      <ProjectCard
+        title="Ferpan Comércio de Ferros"
+        image={Ferpan}
+        link="https://ferpancomerciodeferro.com.br"
+      />
+       <ProjectCard
+        title="Clínica Plena"
+        image={ClinicaPlena}
+        link="https://clinicaplenatatuape.com.br"
+      />
+    </div>
+  </div>
+</section>

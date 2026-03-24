@@ -1,68 +1,43 @@
-<p align="center">
-  <img src="./src/assets/logo/LogoMark.svg" width="240" alt="Asteriuz Logo" />
-</p>
+# Astro Starter Kit: Minimal
 
-# Asteriuz's Website
-
-Este é um projeto [Next.js](https://nextjs.org/) para o meu Portfólio. Ele é
-inicializado com
-[`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app)
-e usa Tailwind CSS para estilização.
-
-## Estrutura do Projeto
-
-O projeto tem a seguinte estrutura:
-
-- `src/`: Contém o código fonte do projeto.
-- `public/`: Contém arquivos estáticos como imagens e fontes.
-- `tailwind.config.ts`: Arquivo de configuração do Tailwind CSS.
-- `next.config.mjs`: Arquivo de configuração do Next.js.
-- `package.json`: Lista as dependências e scripts do projeto.
-
-## Começando
-
-Primeiro, instale as dependências:
-
-```bash
-npm install
+```sh
+pnpm create astro@latest -- --template minimal
 ```
 
-Em seguida, execute o servidor de desenvolvimento:
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-```bash
-npm run dev
+## 🚀 Project Structure
+
+Inside of your Astro project, you'll see the following folders and files:
+
+```text
+/
+├── public/
+├── src/
+│   └── pages/
+│       └── index.astro
+└── package.json
 ```
 
-Abra [http://localhost:3000](http://localhost:3000) no seu navegador para ver o
-resultado.
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
-## Construindo o Projeto
+There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
 
-Para construir o projeto, execute:
+Any static assets, like images, can be placed in the `public/` directory.
 
-```bash
-npm run build
-```
+## 🧞 Commands
 
-## Linting do Projeto
+All commands are run from the root of the project, from a terminal:
 
-Para fazer o lint do projeto, execute:
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `pnpm install`             | Installs dependencies                            |
+| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
+| `pnpm build`           | Build your production site to `./dist/`          |
+| `pnpm preview`         | Preview your build locally, before deploying     |
+| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `pnpm astro -- --help` | Get help using the Astro CLI                     |
 
-```bash
-npm run lint
-```
+## 👀 Want to learn more?
 
-## Implantação
-
-O projeto está configurado para ser implantado no GitHub Pages. A implantação é
-gerenciada por um fluxo de trabalho do GitHub Actions definido em
-`.github/workflows/deploy.yml`.
-
-## Contribuindo
-
-Contribuições são bem-vindas! Por favor, certifique-se de fazer o lint do seu
-código antes de enviar um pull request.
-
-## Licença
-
-Este projeto está licenciado sob a Licença MIT.
+Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).

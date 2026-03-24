@@ -1,0 +1,95 @@
+---
+import { Phone, MessageCircle, Mail, MapPin } from "@lucide/astro";
+
+import SectionText from "../utils/SectionText.astro";
+import ContactCard from "../utils/Cards/ContactCards.astro";
+
+const mapsLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent("Tatuapé, São Paulo - SP")}`;
+---
+
+<section id="contact" class="mx-auto flex w-full justify-center">
+  <div
+    class="relative flex w-full max-w-7xl flex-col items-center py-12.5 xl:py-25"
+  >
+    <SectionText firstWord="MEU" lastWord="CONTATO" bgWord="CONTATO" />
+
+    <div class="grid w-full grid-cols-1 gap-x-6 gap-y-8 xl:grid-cols-4">
+      <ContactCard
+        title="Telefone"
+        subtitle="(11) 99743-4003"
+        icon={Phone}
+        link="tel:+5511997434003"
+      />
+
+      <ContactCard
+        title="Whatsapp"
+        subtitle="(11) 99743-4003"
+        icon={MessageCircle}
+        link="https://wa.me/5511997434003"
+      />
+
+      <ContactCard
+        title="Email"
+        subtitle="augustobb@live.com"
+        icon={Mail}
+        link="mailto:augustobb@live.com"
+      />
+
+      <ContactCard
+        title="Endereço"
+        subtitle="Tatuapé, São Paulo - SP"
+        icon={MapPin}
+        link={mapsLink}
+      />
+
+      <div
+        id="whatsapp-form"
+        class="row-span-2 rounded-lg p-6 shadow-float xl:col-span-2"
+      >
+        <form
+          class="flex h-full flex-col space-y-4"
+          onsubmit="event.preventDefault(); const d=new FormData(this); const msg=`Nome: ${encodeURIComponent(d.get('name')||'')}%0AEmail: ${encodeURIComponent(d.get('email')||'')}%0AMensagem: ${encodeURIComponent(d.get('message')||'')}`; window.open(`https://wa.me/5511997434003?text=${msg}`,'_blank');"
+        >
+          <h2 class="text-2xl font-semibold">Envie uma mensagem</h2>
+          <div class="flex grow flex-col gap-4">
+            <input
+              type="text"
+              name="name"
+              placeholder="Nome"
+              class="rounded-lg border border-[#e5e7eb] bg-white p-3 focus:border-transparent focus:outline-none focus:ring-2 focus:ring-primary"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              class="rounded-lg border border-[#e5e7eb] bg-white p-3 focus:border-transparent focus:outline-none focus:ring-2 focus:ring-primary"
+              required
+            />
+            <textarea
+              name="message"
+              placeholder="Mensagem"
+              class="h-40 grow rounded-lg border border-[#e5e7eb] bg-white p-3 focus:border-transparent focus:outline-none focus:ring-2 focus:ring-primary xl:h-auto"
+              required></textarea>
+          </div>
+          <button
+            type="submit"
+            class="rounded-lg bg-primary p-3 text-white cursor-pointer"
+            >Enviar Mensagem via WhatsApp</button
+          >
+        </form>
+      </div>
+
+      <div
+        class="h-96 overflow-hidden rounded-lg shadow-float xl:col-span-2 xl:row-span-2"
+      >
+        <iframe
+          title="Localização"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18241.88094357834!2d-46.58563004959454!3d-23.537456240408996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5ee7acdd50f5%3A0x3eeaf24eff368507!2zVGF0dWFww6ksIFPDo28gUGF1bG8gLSBTUA!5e0!3m2!1spt-BR!2sbr!4v1727764754773!5m2!1spt-BR!2sbr"
+          style="border:0;width:100%;height:100%"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>

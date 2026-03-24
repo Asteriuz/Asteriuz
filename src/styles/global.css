@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Gotham";
+  src: url("@/assets/fonts/Gotham-Font/GothamMedium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("@/assets/fonts/Gotham-Font/Gotham-Black.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --color-primary: #e22f24;
+  --color-primary-hover: #9a0a0a;
+  --color-secondary: #ff6500;
+  --color-semiblack: #333333;
+  --color-cinza: #e5e5e5;
+  --color-cinza-text: #6b6b6b;
+  --color-transwhite: #ffffff75;
+  --color-background: #fff;
+  --color-card: #fff;
+
+  --font-heading: "Gotham", system-ui, sans-serif;
+  --font-body: "Poppins", system-ui, sans-serif;
+
+  --shadow-float: 0px 5px 20px 0px #4545601a;
+}
+
+@custom-variant tall (@media (min-height: 700px));
+
+html {
+  scroll-behavior: smooth;
+  --line-color: #e5e5e5;
+}
+
+body {
+  font-family: var(--font-body);
+}
+
+.divider {
+  margin: 0;
+  height: 1px;
+  width: 100%;
+  background-color: #e5e5e5;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #2e2e2e;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+  background-color: #2e2e2e;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #e22f24;
+}
+
+body.scroll-bottom::-webkit-scrollbar-thumb {
+  border-radius: 10px 10px 0 0;
+}
+
+body.scroll-top::-webkit-scrollbar-thumb {
+  border-radius: 0 0 10px 10px;
+}

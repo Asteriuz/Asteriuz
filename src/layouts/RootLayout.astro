@@ -1,0 +1,53 @@
+---
+import Header from "@/components/Header/Header.astro";
+import BackToTop from "@/components/utils/BackToTop.astro";
+import NavButton from "@/components/utils/NavButton.astro";
+import "@/styles/global.css";
+import "@/styles/misc.css";
+---
+
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio de um desenvolvedor web, com foco em front-end e design."
+    />
+    <title>Asteriuz</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  </head>
+  <body
+    data-theme="light"
+    class="flex min-h-[200vh] min-w-full justify-between bg-background font-body text-semiblack"
+  >
+    <NavButton />
+    <Header />
+    <BackToTop />
+    <slot />
+
+    <script>
+      const body = document.querySelector("body");
+
+      globalThis.addEventListener(
+        "scroll",
+        () => {
+          if (!body) return;
+          if (
+            globalThis.innerHeight + globalThis.scrollY >=
+            document.body.offsetHeight
+          ) {
+            body.classList.add("scroll-bottom");
+          } else if (globalThis.scrollY === 0) {
+            body.classList.add("scroll-top");
+          } else {
+            body.classList.remove("scroll-top");
+            body.classList.remove("scroll-bottom");
+          }
+        },
+        { passive: true },
+      );
+    </script>
+  </body>
+</html>
