@@ -8,13 +8,12 @@ import WhatsappLogo from "@/assets/icons/brands/whatsapp.svg";
 
 <section
   id="hero"
-  class="relative z-40 flex h-screen w-full flex-col overflow-hidden bg-black"
+  class="relative z-40 flex hero-mobile-height flex-col overflow-hidden bg-black"
 >
-  <canvas id="matrix-bg" class="absolute h-full w-full brightness-[0.7]"
-  ></canvas>
+  <canvas id="matrix-bg" class="absolute h-full brightness-[0.7]"></canvas>
 
   <div
-    class="relative flex h-full w-full flex-col items-center justify-center gap-7 xl:gap-8"
+    class="relative flex h-full flex-col items-center justify-center gap-7 xl:gap-8"
   >
     <div class="hero-profile">
       <Image
@@ -218,6 +217,32 @@ import WhatsappLogo from "@/assets/icons/brands/whatsapp.svg";
 </script>
 
 <style>
+  .hero-mobile-height {
+    /* Mobile-first approach */
+    height: 100vh; /* Fallback */
+    height: 100dvh; /* Dynamic viewport height for modern browsers */
+    min-height: 100vh; /* Ensure minimum height */
+    min-height: 100dvh; /* Dynamic minimum height */
+  }
+
+  /* For mobile devices specifically */
+  @media (max-width: 768px) {
+    .hero-mobile-height {
+      height: calc(100vh - env(safe-area-inset-top));
+      height: calc(100dvh - env(safe-area-inset-top));
+      max-height: 100vh;
+      max-height: 100dvh;
+    }
+  }
+
+  /* For very small screens, limit the height */
+  @media (max-height: 600px) {
+    .hero-mobile-height {
+      height: 100vh;
+      max-height: 100vh;
+    }
+  }
+
   .material-bubble {
     overflow: hidden;
     box-shadow: none;
