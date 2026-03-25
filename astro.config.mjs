@@ -8,6 +8,6 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  site: "https://asteriuz.github.io",
-  base: "/Asteriuz",
+  // site: "https://asteriuz.github.io",
+  base: "/",
 });
