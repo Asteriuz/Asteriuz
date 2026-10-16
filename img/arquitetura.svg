@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Asteriuz · arquitetura do Lab — carvão #222222 · vermelho #FF3131 · tint #FF8585 · off-white #EDEDED -->
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="360" viewBox="0 0 960 360" role="img">
+  <title>Arquitetura do AsteriuzLab: Usuário → Open WebUI → LiteLLM gateway → OpenRouter → LLMs, com Tavily e PostgreSQL</title>
+  <defs>
+    <marker id="seta-vermelha" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#FF3131"/>
+    </marker>
+    <marker id="seta-rosa" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#FF8585"/>
+    </marker>
+  </defs>
+  <g font-family="'JetBrains Mono','Cascadia Code',Consolas,'DejaVu Sans Mono',monospace">
+    <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M160 180H215" stroke="#FF3131" stroke-width="2" marker-end="url(#seta-vermelha)"/>
+      <path d="M390 180H445" stroke="#FF3131" stroke-width="2" marker-end="url(#seta-vermelha)"/>
+      <path d="M525 142V92Q525 84 533 84H645" stroke="#FF3131" stroke-width="2" marker-end="url(#seta-vermelha)"/>
+      <path d="M795 84H820" stroke="#FF3131" stroke-width="2" marker-end="url(#seta-vermelha)"/>
+      <path d="M302 218V296Q302 304 310 304H430" stroke="#FF8585" stroke-width="1.8" stroke-dasharray="5 6" marker-end="url(#seta-rosa)"/>
+      <path d="M585 218V296Q585 304 593 304H720" stroke="#FF8585" stroke-width="1.8" stroke-dasharray="5 6" marker-end="url(#seta-rosa)"/>
+    </g>
+    <text x="366" y="297" text-anchor="middle" font-size="11" fill="#FF8585">RAG · busca web</text>
+    <text x="652" y="297" text-anchor="middle" font-size="11" fill="#FF8585">logs · custos</text>
+    <g fill="#222222" stroke="#3a3a3a" stroke-width="1.5">
+      <rect x="20" y="148" width="140" height="64" rx="32"/>
+      <rect x="215" y="142" width="175" height="76" rx="14"/>
+      <rect x="445" y="142" width="160" height="76" rx="14"/>
+      <rect x="645" y="52" width="150" height="64" rx="14"/>
+      <rect x="820" y="52" width="110" height="64" rx="14"/>
+      <rect x="430" y="272" width="140" height="64" rx="14"/>
+      <rect x="720" y="272" width="160" height="64" rx="14"/>
+    </g>
+    <g fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <g transform="translate(45 169) scale(0.9167)" stroke="#EDEDED">
+        <circle cx="12" cy="8" r="4"/>
+        <path d="M4 20c0-4.2 3.6-6.4 8-6.4s8 2.2 8 6.4"/>
+      </g>
+      <g transform="translate(245 169) scale(0.9167)" stroke="#FF3131">
+        <path d="M20 14a2 2 0 0 1-2 2H8.4L4 20V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2z"/>
+      </g>
+      <g transform="translate(480 169) scale(0.9167)" stroke="#FF3131">
+        <path d="M12 3l7 2.8V11c0 4.9-3.1 8.2-7 9.9-3.9-1.7-7-5-7-9.9V5.8z"/>
+        <path d="M9 11.5l2.2 2.2 4-4"/>
+      </g>
+      <g transform="translate(663 73) scale(0.9167)" stroke="#FF3131">
+        <path d="M4 12h6c5.5 0 5.5-6 10-6"/>
+        <path d="M17.5 3.5L20 6l-2.5 2.5"/>
+        <path d="M4 12h6c5.5 0 5.5 6 10 6"/>
+        <path d="M17.5 15.5L20 18l-2.5 2.5"/>
+      </g>
+      <g transform="translate(843 73) scale(0.9167)" stroke="#FF8585">
+        <path d="M12 3.5c.7 4.3 2.7 6.3 7 7-4.3.7-6.3 2.7-7 7-.7-4.3-2.7-6.3-7-7 4.3-.7 6.3-2.7 7-7z"/>
+      </g>
+      <g transform="translate(460 293) scale(0.9167)" stroke="#FF8585">
+        <circle cx="11" cy="11" r="6.5"/>
+        <path d="M15.8 15.8L20.5 20.5"/>
+      </g>
+      <g transform="translate(743 293) scale(0.9167)" stroke="#FF8585">
+        <ellipse cx="12" cy="5.5" rx="7.5" ry="3"/>
+        <path d="M4.5 5.5v13c0 1.66 3.36 3 7.5 3s7.5-1.34 7.5-3v-13"/>
+        <path d="M4.5 12c0 1.66 3.36 3 7.5 3s7.5-1.34 7.5-3"/>
+      </g>
+    </g>
+    <g>
+      <text x="75" y="185" font-size="14" font-weight="700" fill="#FFFFFF">Usuário</text>
+      <text x="275" y="176" font-size="14" font-weight="700" fill="#FFFFFF">Open WebUI</text>
+      <text x="275" y="196" font-size="11" fill="#FF8585">chat · pipes</text>
+      <text x="510" y="176" font-size="14" font-weight="700" fill="#FFFFFF">LiteLLM</text>
+      <text x="510" y="196" font-size="11" fill="#FF8585">gateway</text>
+      <text x="693" y="89" font-size="14" font-weight="700" fill="#FFFFFF">OpenRouter</text>
+      <text x="873" y="89" font-size="14" font-weight="700" fill="#FFFFFF">LLMs</text>
+      <text x="490" y="309" font-size="14" font-weight="700" fill="#FFFFFF">Tavily</text>
+      <text x="773" y="309" font-size="14" font-weight="700" fill="#FFFFFF">PostgreSQL</text>
+    </g>
+  </g>
+</svg>

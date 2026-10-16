@@ -16,7 +16,6 @@
 
 </div>
 
-<div>&nbsp;</div>
 
 <div align="center"><samp>✦ ────────────── ✧ ────────────── ✦</samp></div>
 
@@ -73,14 +72,7 @@ Cada projeto é um cometa — direção clara, rastro de código.
 
 <div align="center">
 
-```mermaid
-flowchart LR
-    U(["👤 Usuário"]) --> W["🌐 Open WebUI<br/>chat · pipes"]
-    W --> L["🛡️ LiteLLM<br/>gateway"]
-    L --> R["🔀 OpenRouter"] --> M["🧠 LLMs"]
-    W -. "RAG · busca web" .-> T["🔎 Tavily"]
-    L -. "logs · custos" .-> P["🐘 PostgreSQL"]
-```
+<img src="img/arquitetura.svg" alt="Arquitetura do AsteriuzLab: Usuário → Open WebUI → LiteLLM gateway → OpenRouter → LLMs; Open WebUI usa Tavily para RAG · busca web e o LiteLLM grava logs · custos no PostgreSQL" width="100%" />
 
 </div>
 
