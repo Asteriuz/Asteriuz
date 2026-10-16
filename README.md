@@ -209,7 +209,7 @@ Métricas por **usuário · modelo · dia**, extraídas direto do PostgreSQL do 
 
 <samp>✦ ────────────── ✧ ────────────── ✦</samp>
 
-<i>Feito à mão, cometa por cometa — Python, Docker e café.</i><br/>
+<i>Automatizando tudo, cometa por cometa — Python, Docker e café.</i><br/>
 <i>Se algo por aqui brilhou, deixe uma ⭐ — constelações se constroem juntas.</i>
 
 </div>
