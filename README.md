@@ -30,22 +30,26 @@ Cada projeto é um cometa — direção clara, rastro de código.
 
 </div>
 
-<h2 align="center">🚀 Projeto em destaque · asteriuzLab</h2>
+<h2 align="center"><img src="https://api.iconify.design/lucide/rocket.svg?color=%23FF3131&height=22" alt="" /> Projeto em destaque · AsteriuzLab</h2>
 
 <div align="center">
 
 <samp><sub>Uma VPS, um <code>compose up</code> — e o laboratório no ar</sub></samp>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:222222,100:FF3131&height=3&section=header" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:222222,50:FF3131,100:222222&height=3&section=header" />
 
-<img src="https://img.shields.io/badge/Docker-Compose-FF3131?style=flat-square&labelColor=222222&logo=docker&logoColor=white" alt="Docker Compose" />
-<img src="https://img.shields.io/badge/Python-uv-FF8585?style=flat-square&labelColor=222222&logo=python&logoColor=white" alt="Python com uv" />
-<img src="https://img.shields.io/badge/PostgreSQL-dados-FF3131?style=flat-square&labelColor=222222&logo=postgresql&logoColor=white" alt="PostgreSQL" />
-<img src="https://img.shields.io/badge/LiteLLM-gateway-FF8585?style=flat-square&labelColor=222222" alt="LiteLLM gateway" />
-<img src="https://img.shields.io/badge/Open_WebUI-interface-FF3131?style=flat-square&labelColor=222222" alt="Open WebUI" />
-<img src="https://img.shields.io/badge/OpenRouter-modelos-FF8585?style=flat-square&labelColor=222222&logo=openrouter&logoColor=white" alt="OpenRouter" />
-<img src="https://img.shields.io/badge/Tavily-busca_web-FF3131?style=flat-square&labelColor=222222" alt="Tavily busca web" />
-<img src="https://img.shields.io/badge/just-runner-FF8585?style=flat-square&labelColor=222222" alt="just command runner" />
+<img src="https://img.shields.io/badge/Docker-Compose-FF3131?style=for-the-badge&labelColor=222222&logo=docker&logoColor=white" alt="Docker Compose" />
+<img src="https://img.shields.io/badge/Python-uv-FF8585?style=for-the-badge&labelColor=222222&logo=python&logoColor=white" alt="Python com uv" />
+<img src="https://img.shields.io/badge/PostgreSQL-dados-FF3131?style=for-the-badge&labelColor=222222&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+<br/>
+<img src="https://img.shields.io/badge/LiteLLM-gateway-FF8585?style=for-the-badge&labelColor=222222" alt="LiteLLM gateway" />
+<img src="https://img.shields.io/badge/Open_WebUI-interface-FF3131?style=for-the-badge&labelColor=222222" alt="Open WebUI" />
+<img src="https://img.shields.io/badge/OpenRouter-modelos-FF8585?style=for-the-badge&labelColor=222222&logo=openrouter&logoColor=white" alt="OpenRouter" />
+<br/>
+<img src="https://img.shields.io/badge/Tavily-busca_web-FF3131?style=for-the-badge&labelColor=222222" alt="Tavily busca web" />
+<img src="https://img.shields.io/badge/just-runner-FF8585?style=for-the-badge&labelColor=222222" alt="just command runner" />
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:222222,50:FF3131,100:222222&height=3&section=header" />
 
 </div>
 
@@ -55,10 +59,10 @@ Cada projeto é um cometa — direção clara, rastro de código.
 
 <div align="center">
 
-| 🌐 **Open WebUI** | 🛡️ **LiteLLM** |
+| <img src="https://api.iconify.design/ph/globe-duotone.svg?color=%23FF3131&height=38" alt="" /><br/>**Open WebUI** | <img src="https://api.iconify.design/ph/shield-check-duotone.svg?color=%23EDEDED&height=38" alt="" /><br/>**LiteLLM** |
 |:---:|:---:|
 | *front de chat com pipes customizados* | *gateway único · logs · custos por modelo* |
-| 🔎 **Tavily** | 🐘 **PostgreSQL** |
+| <img src="https://api.iconify.design/ph/magnifying-glass-duotone.svg?color=%23FF3131&height=38" alt="" /><br/>**Tavily** | <img src="https://api.iconify.design/ph/database-duotone.svg?color=%23EDEDED&height=38" alt="" /><br/>**PostgreSQL** |
 | *busca web injetada na conversa* | *métricas por usuário · modelo · dia* |
 
 </div>
@@ -78,7 +82,7 @@ flowchart LR
 
 <div align="center"><img src="https://img.shields.io/badge/─────-222222?style=flat-square" alt="Divisória" /></div>
 
-<h2 align="center">🧩 Áreas de atuação</h2>
+<h2 align="center"><img src="https://api.iconify.design/lucide/puzzle.svg?color=%23FF3131&height=22" alt="" /> Áreas de atuação</h2>
 
 <!-- ✏️ EDITE: quando os repositórios dos projetos abrirem, transforme os títulos dos cards em links. -->
 
@@ -86,14 +90,18 @@ flowchart LR
 <tr>
 <td align="center" width="50%">
 
-### 🩺 Anamnesis · scribe clínico
+<img src="https://api.iconify.design/ph/stethoscope-duotone.svg?color=%23FF3131&height=38" alt="" />
+
+### Anamnesis · scribe clínico
 
 API que transforma transcrições de consulta em **prontuários estruturados em PDF** — via Pipe do Open WebUI + Gotenberg.
 
 </td>
 <td align="center" width="50%">
 
-### 🚗 Dados automotivos · qualidade de RAG
+<img src="https://api.iconify.design/ph/car-duotone.svg?color=%23EDEDED&height=38" alt="" />
+
+### Dados automotivos · qualidade de RAG
 
 Coleta automatizada de manuais em PDF, extração de fichas técnicas via LLM e **benchmark de acerto de RAG** (com KB vs. puro vs. web).
 
@@ -102,14 +110,18 @@ Coleta automatizada de manuais em PDF, extração de fichas técnicas via LLM e 
 <tr>
 <td align="center" width="50%">
 
-### 👕 Guarda-roupa inteligente
+<img src="https://api.iconify.design/ph/t-shirt-duotone.svg?color=%23FF3131&height=38" alt="" />
+
+### Guarda-roupa inteligente
 
 Pipeline de **ingestão → extração → revisão** com LLM para catalogar sem digitar nada.
 
 </td>
 <td align="center" width="50%">
 
-### 💰 Custos de IA
+<img src="https://api.iconify.design/ph/coins-duotone.svg?color=%23EDEDED&height=38" alt="" />
+
+### Custos de IA
 
 Métricas por **usuário · modelo · dia**, extraídas direto do PostgreSQL do LiteLLM.
 
@@ -117,7 +129,7 @@ Métricas por **usuário · modelo · dia**, extraídas direto do PostgreSQL do 
 </tr>
 </table>
 
-<h2 align="center">🛠️ Tech Stack</h2>
+<h2 align="center"><img src="https://api.iconify.design/lucide/wrench.svg?color=%23FFFFFF&height=22" alt="" /> Tech Stack</h2>
 
 <div align="center">
 
@@ -137,22 +149,26 @@ Métricas por **usuário · modelo · dia**, extraídas direto do PostgreSQL do 
 
 </div>
 
-<h2 align="center">📊 Métricas em órbita</h2>
+<h2 align="center"><!-- TODO: substituir por img/icons/cometa-*.svg --><img src="https://api.iconify.design/lucide/orbit.svg?color=%23FF3131&height=22" alt="" /> Métricas em órbita</h2>
 
 <div align="center">
 
 <!-- Opcional: remova include_all_commits/count_private para exibir apenas o histórico público. -->
 
-<img height="160em" src="https://github-readme-stats.vercel.app/api?username=asteriuz&show_icons=true&locale=pt-BR&bg_color=222222&title_color=FF3131&icon_color=FF8585&text_color=EDEDED&hide_border=true&include_all_commits=true&count_private=true" alt="Estatísticas do GitHub de Asteriuz" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:222222,50:FF3131,100:222222&height=3&section=header" />
+
+<img height="160em" src="https://github-readme-stats.vercel.app/api?username=asteriuz&show_icons=true&locale=pt-BR&bg_color=222222&title_color=FF3131&icon_color=FF8585&text_color=EDEDED&hide_border=true&hide=stars,issues&include_all_commits=true&count_private=true" alt="Estatísticas do GitHub de Asteriuz" />
 <img height="160em" src="https://streak-stats.demolab.com/?user=asteriuz&locale=pt-BR&hide_border=true&background=222222&ring=FF3131&fire=FF3131&currStreakNum=FF3131&currStreakLabel=EDEDED&sideNums=FF8585&sideLabels=EDEDED&dates=EDEDED" alt="Sequência atual de contribuições" />
 <br/>
 <img height="160em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=asteriuz&layout=compact&locale=pt-BR&bg_color=222222&title_color=FF3131&text_color=EDEDED&hide_border=true&langs_count=8" alt="Linguagens mais usadas" />
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:222222,50:FF3131,100:222222&height=3&section=header" />
 
 <sub>Números buscados ao vivo — nada aqui é escrito à mão.</sub>
 
 </div>
 
-<h2 align="center">🐍 A cobra e as estrelas</h2>
+<h2 align="center"><!-- TODO: substituir por img/icons/cometa-*.svg --><img src="https://api.iconify.design/lucide/sparkles.svg?color=%23FFFFFF&height=22" alt="" /> A cobra e as estrelas</h2>
 
 <div align="center">
 
@@ -169,12 +185,12 @@ Métricas por **usuário · modelo · dia**, extraídas direto do PostgreSQL do 
 
 </div>
 
-<h2 align="center">🤝 Como me encontrar</h2>
+<h2 align="center"><img src="https://api.iconify.design/lucide/send.svg?color=%23FF3131&height=22" alt="" /> Como me encontrar</h2>
 
 <div align="center">
 
 [![GitHub](https://img.shields.io/badge/GitHub-222222?style=flat-square&logo=github&logoColor=FF3131)](https://github.com/Asteriuz)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-222222?style=flat-square&logo=linkedin&logoColor=FF3131)](https://www.linkedin.com/in/Asteriuz)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-222222?style=flat-square&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI0ZGMzEzMSIgZD0iTTIwLjQ0NyAyMC40NTJoLTMuNTU0di01LjU2OWMwLTEuMzI4LS4wMjctMy4wMzctMS44NTItMy4wMzctMS44NTMgMC0yLjEzNiAxLjQ0NS0yLjEzNiAyLjkzOXY1LjY2N0g5LjM1MVY5aDMuNDE0djEuNTYxaC4wNDZjLjQ3Ny0uOSAxLjYzNy0xLjg1IDMuMzctMS44NSAzLjYwMSAwIDQuMjY3IDIuMzcgNC4yNjcgNS40NTV2Ni4yODZ6TTUuMzM3IDcuNDMzYy0xLjE0NCAwLTIuMDYzLS45MjYtMi4wNjMtMi4wNjUgMC0xLjEzOC45Mi0yLjA2MyAyLjA2My0yLjA2MyAxLjE0IDAgMi4wNjQuOTI1IDIuMDY0IDIuMDYzIDAgMS4xMzktLjkyNSAyLjA2NS0yLjA2NCAyLjA2NXptMS43ODIgMTMuMDE5SDMuNTU1VjloMy41NjR2MTEuNDUyek0yMi4yMjUgMEgxLjc3MUMuNzkyIDAgMCAuNzc0IDAgMS43Mjl2MjAuNTQyQzAgMjMuMjI3Ljc5MiAyNCAxLjc3MSAyNGgyMC40NTFDMjMuMiAyNCAyNCAyMy4yMjcgMjQgMjIuMjcxVjEuNzI5QzI0IC43NzQgMjMuMiAwIDIyLjIyMiAwaC4wMDN6Ii8+PC9zdmc+)](https://www.linkedin.com/in/Asteriuz)
 [![E--mail](https://img.shields.io/badge/E--mail-222222?style=flat-square&logo=minutemailer&logoColor=FF3131)](mailto:gutocebola@gmail.com)
 
 <sub>Aberto a conversas sobre IA self-hosted, RAG e automação — ou sobre outros laboratórios caseiros.</sub>
