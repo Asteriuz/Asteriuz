@@ -2,18 +2,20 @@
      ✦ ASTERIUZ · README de perfil — github.com/Asteriuz
      Paleta derivada do logo (cometa): carvão #222222 · vermelho #FF3131
      branco #FFFFFF · tint #FF8585 · off-white #EDEDED
-     Pontos que exigem ajuste estão marcados com “✏️ EDITE”.
+     Pontos que exigem ajuste estão marcados com "✏️ EDITE".
      ══════════════════════════════════════════════════════════════════════ -->
 
 <div align="center">
 
-<img src="img\LogoMark.svg" width="140" alt="Logo Asteriuz — cometa vermelho com estrela branca" />
+<img src="img/LogoMark.svg" width="140" alt="Logo Asteriuz — cometa vermelho com estrela branca" />
 
-<img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&size=26&duration=2000&pause=1000&color=FF3131&center=true&vCenter=true&repeat=false&width=520&height=50&lines=%E2%9C%A6+Ol%C3%A1%2C+eu+sou+Asteriuz+%E2%9C%A6" alt="Saudação: Olá, eu sou Asteriuz" />
+<img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&size=26&duration=2000&pause=1000&color=FF3131&center=true&vCenter=true&width=520&height=50&lines=%E2%9C%A6+Ol%C3%A1%2C+eu+sou+Asteriuz+%E2%9C%A6" alt="Saudação: Olá, eu sou Asteriuz" />
 
-<samp>Desenvolvedor &amp; Arquiteto de Soluções de IA</samp>
-
-<img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&size=17&duration=3500&pause=1200&color=FF8585&center=true&vCenter=true&width=560&height=34&lines=Construindo+infraestrutura+de+IA+self-hosted%3BRAG+%E2%80%A2+LLM+Ops+%E2%80%A2+Automa%C3%A7%C3%A3o%3BDocker+%E2%80%A2+Python+%E2%80%A2+Open+Source%3BFull+stack+de+base%2C+IA+de+miss%C3%A3o" alt="Frases de posicionamento" />
+<samp><b>Desenvolvedor &amp; Arquiteto de Soluções de IA</b></samp><br/>
+<samp><sub>Construindo infraestrutura de IA self-hosted<br/>
+RAG · LLM Ops · Automação<br/>
+Docker · Python · Open Source<br/>
+Full stack de base, IA de missão</sub></samp>
 
 </div>
 
@@ -21,9 +23,9 @@
 
 <div align="center">
 
-Sou o **Asteriuz** — desenvolvedor e arquiteto de soluções de IA.<br/>
-Vim do universo **full stack** (Flutter · React · UI/UX) e hoje construo o meu:
-**infraestrutura self-hosted**, automação e organização de ponta a ponta.<br/>
+Sou o <b>Asteriuz</b> — desenvolvedor e arquiteto de soluções de IA.<br/>
+Vim do universo <b>full stack</b> (Flutter · React · UI/UX) e hoje construo o meu:<br/>
+<b>infraestrutura self-hosted</b>, automação e organização de ponta a ponta.<br/>
 Cada projeto é um cometa — direção clara, rastro de código.
 
 </div>
@@ -32,7 +34,8 @@ Cada projeto é um cometa — direção clara, rastro de código.
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&size=17&duration=3000&pause=1500&color=FF8585&center=true&vCenter=true&repeat=false&width=560&height=34&lines=Uma+VPS%2C+um+compose+up+—+e+o+laborat%C3%B3rio+no+ar" alt="Frase do projeto" />
+<samp><sub>Uma VPS, um <code>compose up</code> — e o laboratório no ar</sub></samp>
+
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:222222,100:FF3131&height=3&section=header" />
 
 <img src="https://img.shields.io/badge/Docker-Compose-FF3131?style=flat-square&labelColor=222222&logo=docker&logoColor=white" alt="Docker Compose" />
@@ -51,28 +54,12 @@ Cada projeto é um cometa — direção clara, rastro de código.
 -->
 
 <div align="center">
-<table>
-<tr>
-<td align="center" width="50%">
-<samp><b>🌐 Open WebUI</b></samp><br/>
-<sub>front de chat com pipes customizados</sub>
-</td>
-<td align="center" width="50%">
-<samp><b>🛡️ LiteLLM</b></samp><br/>
-<sub>gateway único · logs · custos por modelo</sub>
-</td>
-</tr>
-<tr>
-<td align="center" width="50%">
-<samp><b>🔎 Tavily</b></samp><br/>
-<sub>busca web injetada na conversa</sub>
-</td>
-<td align="center" width="50%">
-<samp><b>🐘 PostgreSQL</b></samp><br/>
-<sub>métricas por usuário · modelo · dia</sub>
-</td>
-</tr>
-</table>
+
+| 🌐 **Open WebUI** | 🛡️ **LiteLLM** |
+|:---:|:---:|
+| *front de chat com pipes customizados* | *gateway único · logs · custos por modelo* |
+| 🔎 **Tavily** | 🐘 **PostgreSQL** |
+| *busca web injetada na conversa* | *métricas por usuário · modelo · dia* |
 
 </div>
 
@@ -80,21 +67,11 @@ Cada projeto é um cometa — direção clara, rastro de código.
 
 ```mermaid
 flowchart LR
-    U(["👤 Usuário"]) --> W
-    subgraph S[" "]
-        direction LR
-        W["🌐 Open WebUI<br/>chat · pipes"] --> L["🛡️ LiteLLM<br/>gateway"]
-        L --> R["🔀 OpenRouter"]
-        W -. "RAG · busca web" .-> T["🔎 Tavily"]
-        L -. "logs · custos" .-> P["🐘 PostgreSQL"]
-    end
-    R --> M["🧠 LLMs"]
-    style S fill:#222222,stroke:#FF3131,stroke-width:2px,color:#EDEDED
-    style W fill:#333333,stroke:#FF3131,color:#FFFFFF
-    style L fill:#333333,stroke:#FF8585,color:#FFFFFF
-    style R fill:#333333,stroke:#FF8585,color:#FFFFFF
-    style T fill:#333333,stroke:#FF3131,color:#FFFFFF
-    style P fill:#333333,stroke:#FF8585,color:#FFFFFF
+    U(["👤 Usuário"]) --> W["🌐 Open WebUI<br/>chat · pipes"]
+    W --> L["🛡️ LiteLLM<br/>gateway"]
+    L --> R["🔀 OpenRouter"] --> M["🧠 LLMs"]
+    W -. "RAG · busca web" .-> T["🔎 Tavily"]
+    L -. "logs · custos" .-> P["🐘 PostgreSQL"]
 ```
 
 </div>
@@ -179,13 +156,13 @@ Métricas por **usuário · modelo · dia**, extraídas direto do PostgreSQL do 
 
 <div align="center">
 
-<!-- A animação é gerada por GitHub Action no branch “output” (Platane/snk).
+<!-- A animação é gerada por GitHub Action no branch "output" (Platane/snk).
      Se as imagens não carregarem, rode o workflow da cobra. -->
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/Asteriuz/Asteriuz/blob/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://github.com/Asteriuz/Asteriuz/blob/output/github-contribution-grid-snake.svg" />
-  <img alt="Cobra percorrendo o grid de contribuições" src="https://github.com/Asteriuz/Asteriuz/blob/output/github-contribution-grid-snake.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Asteriuz/Asteriuz/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Asteriuz/Asteriuz/output/github-contribution-grid-snake.svg" />
+  <img alt="Cobra percorrendo o grid de contribuições" src="https://raw.githubusercontent.com/Asteriuz/Asteriuz/output/github-contribution-grid-snake.svg" />
 </picture>
 
 <sub>A serpente cruza o meu céu de commits, engolindo uma estrela de cada vez.</sub>
@@ -196,9 +173,8 @@ Métricas por **usuário · modelo · dia**, extraídas direto do PostgreSQL do 
 
 <div align="center">
 
-
 [![GitHub](https://img.shields.io/badge/GitHub-222222?style=flat-square&logo=github&logoColor=FF3131)](https://github.com/Asteriuz)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-222222?style=flat-square&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI0ZGMzEzMSIgZD0iTTIwLjQ0NyAyMC40NTJoLTMuNTU0di01LjU2OWMwLTEuMzI4LS4wMjctMy4wMzctMS44NTItMy4wMzctMS44NTMgMC0yLjEzNiAxLjQ0NS0yLjEzNiAyLjkzOXY1LjY2N0g5LjM1MVY5aDMuNDE0djEuNTYxaC4wNDZjLjQ3Ny0uOSAxLjYzNy0xLjg1IDMuMzctMS44NSAzLjYwMSAwIDQuMjY3IDIuMzcgNC4yNjcgNS40NTV2Ni4yODZ6TTUuMzM3IDcuNDMzYy0xLjE0NCAwLTIuMDYzLS45MjYtMi4wNjMtMi4wNjUgMC0xLjEzOC45Mi0yLjA2MyAyLjA2My0yLjA2MyAxLjE0IDAgMi4wNjQuOTI1IDIuMDY0IDIuMDYzIDAgMS4xMzktLjkyNSAyLjA2NS0yLjA2NCAyLjA2NXptMS43ODIgMTMuMDE5SDMuNTU1VjloMy41NjR2MTEuNDUyek0yMi4yMjUgMEgxLjc3MUMuNzkyIDAgMCAuNzc0IDAgMS43Mjl2MjAuNTQyQzAgMjMuMjI3Ljc5MiAyNCAxLjc3MSAyNGgyMC40NTFDMjMuMiAyNCAyNCAyMy4yMjcgMjQgMjIuMjcxVjEuNzI5QzI0IC43NzQgMjMuMiAwIDIyLjIyMiAwaC4wMDN6Ii8+PC9zdmc+)](https://www.linkedin.com/in/Asteriuz)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-222222?style=flat-square&logo=linkedin&logoColor=FF3131)](https://www.linkedin.com/in/Asteriuz)
 [![E--mail](https://img.shields.io/badge/E--mail-222222?style=flat-square&logo=minutemailer&logoColor=FF3131)](mailto:gutocebola@gmail.com)
 
 <sub>Aberto a conversas sobre IA self-hosted, RAG e automação — ou sobre outros laboratórios caseiros.</sub>
