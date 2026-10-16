@@ -24,24 +24,19 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # ✦ Recoloração para a paleta Asteriuz
-      # cobra → #FF3131 · estrelas (comida) → #FF8585
-      # células vazias → #2A2A2A (carvão mais claro que o fundo #222222)
-      # ✦ Recoloração para a paleta Asteriuz
       - name: recolor snake to Asteriuz palette
         run: |
           cd dist
           for f in github-contribution-grid-snake.svg github-contribution-grid-snake-dark.svg; do
-            # níveis 1-2 de contribuição → vermelho principal
+            # células de contribuição → vermelho principal
             sed -i -e 's/#9be9a8/#FF3131/g' -e 's/#40c463/#FF3131/g' "$f"
             sed -i -e 's/#01311f/#FF3131/g' -e 's/#034525/#FF3131/g' "$f"
-            # níveis 3-4 → degradê mais escuro
             sed -i -e 's/#30a14e/#E53E3E/g' -e 's/#216e39/#B22B2B/g' "$f"
             sed -i -e 's/#0f6d31/#E53E3E/g' -e 's/#00c647/#B22B2B/g' "$f"
-            # células vazias (ambas as paletas)
+            # células vazias
             sed -i -e 's/#ebedf0/#2A2A2A/g' -e 's/#161b22/#2A2A2A/g' "$f"
-            # cabeça da cobra → vermelho (o snk usa a keyword "purple", não hex!)
-            sed -i 's/purple/#FF3131/g' "$f"
+            # corpo e cabeça da cobra → tint rosa (destaque sobre o grid vermelho)
+            sed -i 's/purple/#FF8585/g' "$f"
           done
 
       - name: push github-contribution-grid-snake.svg to the output branch
