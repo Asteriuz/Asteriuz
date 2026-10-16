@@ -12,10 +12,7 @@
 <img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&size=26&duration=2000&pause=1000&color=FF3131&center=true&vCenter=true&width=520&height=50&lines=%E2%9C%A6+Ol%C3%A1%2C+eu+sou+Asteriuz+%E2%9C%A6" alt="Saudação: Olá, eu sou Asteriuz" />
 
 <samp><b>Desenvolvedor &amp; Arquiteto de Soluções de IA</b></samp><br/>
-<samp>Construindo infraestrutura de IA self-hosted<br/>
-RAG · LLM Ops · Automação<br/>
-Docker · Python · Open Source<br/>
-Full stack de base, IA de missão</samp>
+<samp>Infraestrutura de IA self-hosted · RAG · LLM Ops · Automação</samp>
 
 </div>
 
@@ -23,9 +20,8 @@ Full stack de base, IA de missão</samp>
 
 <div align="center">
 
-Sou o <b>Asteriuz</b> — desenvolvedor e arquiteto de soluções de IA.<br/>
-Vim do universo <b>full stack</b> (Flutter · React · UI/UX) e hoje construo o meu:<br/>
-<b>infraestrutura self-hosted</b>, automação e organização de ponta a ponta.<br/>
+Sou o <b>Asteriuz</b>. Vim do universo <b>full stack</b> (Flutter · React · UI/UX)<br/>
+e hoje levo essa base à órbita da IA, construindo cada laboratório de ponta a ponta.<br/>
 Cada projeto é um cometa — direção clara, rastro de código.
 
 </div>
