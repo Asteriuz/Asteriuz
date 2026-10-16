@@ -27,29 +27,21 @@ jobs:
       # ✦ Recoloração para a paleta Asteriuz
       # cobra → #FF3131 · estrelas (comida) → #FF8585
       # células vazias → #2A2A2A (carvão mais claro que o fundo #222222)
+      # ✦ Recoloração para a paleta Asteriuz
       - name: recolor snake to Asteriuz palette
         run: |
           cd dist
           for f in github-contribution-grid-snake.svg github-contribution-grid-snake-dark.svg; do
-            # Paleta clara (github-light)
-            sed -i \
-              -e 's/#ebedf0/#2A2A2A/g' \
-              -e 's/#9be9a8/#FF3131/g' \
-              -e 's/#40c463/#FF3131/g' \
-              -e 's/#30a14e/#E53E3E/g' \
-              -e 's/#216e39/#B22B2B/g' \
-              -e 's/#8cc8ff/#FF8585/g' \
-              -e 's/#8d3bd6/#FF8585/g' \
-              "$f"
-            # Paleta escura (github-dark)
-            sed -i \
-              -e 's/#161b22/#2A2A2A/g' \
-              -e 's/#0e4429/#FF3131/g' \
-              -e 's/#006d32/#FF3131/g' \
-              -e 's/#26a641/#E53E3E/g' \
-              -e 's/#39d353/#B22B2B/g' \
-              -e 's/#5b2e91/#FF8585/g' \
-              "$f"
+            # níveis 1-2 de contribuição → vermelho principal
+            sed -i -e 's/#9be9a8/#FF3131/g' -e 's/#40c463/#FF3131/g' "$f"
+            sed -i -e 's/#01311f/#FF3131/g' -e 's/#034525/#FF3131/g' "$f"
+            # níveis 3-4 → degradê mais escuro
+            sed -i -e 's/#30a14e/#E53E3E/g' -e 's/#216e39/#B22B2B/g' "$f"
+            sed -i -e 's/#0f6d31/#E53E3E/g' -e 's/#00c647/#B22B2B/g' "$f"
+            # células vazias (ambas as paletas)
+            sed -i -e 's/#ebedf0/#2A2A2A/g' -e 's/#161b22/#2A2A2A/g' "$f"
+            # cabeça da cobra → vermelho (o snk usa a keyword "purple", não hex!)
+            sed -i 's/purple/#FF3131/g' "$f"
           done
 
       - name: push github-contribution-grid-snake.svg to the output branch
