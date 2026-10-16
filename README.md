@@ -80,7 +80,7 @@ flowchart LR
 
 </div>
 
-<div align="center"><img src="https://img.shields.io/badge/─────-222222?style=flat-square" alt="Divisória" /></div>
+<div align="center"><img src="https://capsule-render.vercel.app/api?type=rect&color=0:222222,50:FF3131,100:222222&height=3&section=header" alt="" /><br/></div>
 
 <h2 align="center"><img src="https://api.iconify.design/lucide/puzzle.svg?color=%23FF3131&height=22" alt="" /> Áreas de atuação</h2>
 
