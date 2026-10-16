@@ -1,27 +1,19 @@
 name: generate animation
 
 on:
-  # run automatically every 24 hours
   schedule:
     - cron: "0 0 */3 * *"
-  
-  # allows to manually run the job at any time
   workflow_dispatch:
-  
-  # run on every push on the master branch
   push:
     branches:
-    - main
-    
-  
+      - main
 
 jobs:
   generate:
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    
+
     steps:
-      # generates a snake game from a github user (<github_user_name>) contributions graph, output a svg animation at <svg_out_path>
       - name: generate github-contribution-grid-snake.svg
         uses: Platane/snk/svg-only@v3
         with:
@@ -31,10 +23,35 @@ jobs:
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          
-          
-      # push the content of <build_dir> to a branch
-      # the content will be available at https://raw.githubusercontent.com/<github_user>/<repository>/<target_branch>/<file> , or as github page
+
+      # ✦ Recoloração para a paleta Asteriuz
+      # cobra → #FF3131 · estrelas (comida) → #FF8585
+      # células vazias → #2A2A2A (carvão mais claro que o fundo #222222)
+      - name: recolor snake to Asteriuz palette
+        run: |
+          cd dist
+          for f in github-contribution-grid-snake.svg github-contribution-grid-snake-dark.svg; do
+            # Paleta clara (github-light)
+            sed -i \
+              -e 's/#ebedf0/#2A2A2A/g' \
+              -e 's/#9be9a8/#FF3131/g' \
+              -e 's/#40c463/#FF3131/g' \
+              -e 's/#30a14e/#E53E3E/g' \
+              -e 's/#216e39/#B22B2B/g' \
+              -e 's/#8cc8ff/#FF8585/g' \
+              -e 's/#8d3bd6/#FF8585/g' \
+              "$f"
+            # Paleta escura (github-dark)
+            sed -i \
+              -e 's/#161b22/#2A2A2A/g' \
+              -e 's/#0e4429/#FF3131/g' \
+              -e 's/#006d32/#FF3131/g' \
+              -e 's/#26a641/#E53E3E/g' \
+              -e 's/#39d353/#B22B2B/g' \
+              -e 's/#5b2e91/#FF8585/g' \
+              "$f"
+          done
+
       - name: push github-contribution-grid-snake.svg to the output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
