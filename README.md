@@ -12,10 +12,10 @@
 <img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&size=26&duration=2000&pause=1000&color=FF3131&center=true&vCenter=true&width=520&height=50&lines=%E2%9C%A6+Ol%C3%A1%2C+eu+sou+Asteriuz+%E2%9C%A6" alt="Saudação: Olá, eu sou Asteriuz" />
 
 <samp><b>Desenvolvedor &amp; Arquiteto de Soluções de IA</b></samp><br/>
-<samp><sub>Construindo infraestrutura de IA self-hosted<br/>
+<samp>Construindo infraestrutura de IA self-hosted<br/>
 RAG · LLM Ops · Automação<br/>
 Docker · Python · Open Source<br/>
-Full stack de base, IA de missão</sub></samp>
+Full stack de base, IA de missão</samp>
 
 </div>
 
@@ -34,7 +34,7 @@ Cada projeto é um cometa — direção clara, rastro de código.
 
 <div align="center">
 
-<samp><sub>Uma VPS, um <code>compose up</code> — e o laboratório no ar</sub></samp>
+<samp>Uma VPS, um <code>compose up</code> — e o laboratório no ar</samp>
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:222222,50:FF3131,100:222222&height=3&section=header" />
 
@@ -145,7 +145,7 @@ Métricas por **usuário · modelo · dia**, extraídas direto do PostgreSQL do 
 <img src="https://img.shields.io/badge/CSS3-222222?style=flat-square&logo=css3&logoColor=FFFFFF" alt="CSS3" />
 <img src="https://img.shields.io/badge/Figma-222222?style=flat-square&logo=figma&logoColor=FF3131" alt="Figma" />
 
-<sub><i>A base full stack não foi apagada — só entrou em órbita em torno da IA.</i></sub>
+<i>A base full stack não foi apagada — só entrou em órbita em torno da IA.</i>
 
 </div>
 
@@ -164,7 +164,7 @@ Métricas por **usuário · modelo · dia**, extraídas direto do PostgreSQL do 
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:222222,50:FF3131,100:222222&height=3&section=header" />
 
-<sub>Números buscados ao vivo — nada aqui é escrito à mão.</sub>
+<i>Números buscados ao vivo — nada aqui é escrito à mão.</i>
 
 </div>
 
@@ -181,7 +181,7 @@ Métricas por **usuário · modelo · dia**, extraídas direto do PostgreSQL do 
   <img alt="Cobra percorrendo o grid de contribuições" src="https://raw.githubusercontent.com/Asteriuz/Asteriuz/output/github-contribution-grid-snake.svg" />
 </picture>
 
-<sub>A serpente cruza o meu céu de commits, engolindo uma estrela de cada vez.</sub>
+<i>A serpente cruza o meu céu de commits, engolindo uma estrela de cada vez.</i>
 
 </div>
 
@@ -193,7 +193,7 @@ Métricas por **usuário · modelo · dia**, extraídas direto do PostgreSQL do 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-222222?style=flat-square&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI0ZGMzEzMSIgZD0iTTIwLjQ0NyAyMC40NTJoLTMuNTU0di01LjU2OWMwLTEuMzI4LS4wMjctMy4wMzctMS44NTItMy4wMzctMS44NTMgMC0yLjEzNiAxLjQ0NS0yLjEzNiAyLjkzOXY1LjY2N0g5LjM1MVY5aDMuNDE0djEuNTYxaC4wNDZjLjQ3Ny0uOSAxLjYzNy0xLjg1IDMuMzctMS44NSAzLjYwMSAwIDQuMjY3IDIuMzcgNC4yNjcgNS40NTV2Ni4yODZ6TTUuMzM3IDcuNDMzYy0xLjE0NCAwLTIuMDYzLS45MjYtMi4wNjMtMi4wNjUgMC0xLjEzOC45Mi0yLjA2MyAyLjA2My0yLjA2MyAxLjE0IDAgMi4wNjQuOTI1IDIuMDY0IDIuMDYzIDAgMS4xMzktLjkyNSAyLjA2NS0yLjA2NCAyLjA2NXptMS43ODIgMTMuMDE5SDMuNTU1VjloMy41NjR2MTEuNDUyek0yMi4yMjUgMEgxLjc3MUMuNzkyIDAgMCAuNzc0IDAgMS43Mjl2MjAuNTQyQzAgMjMuMjI3Ljc5MiAyNCAxLjc3MSAyNGgyMC40NTFDMjMuMiAyNCAyNCAyMy4yMjcgMjQgMjIuMjcxVjEuNzI5QzI0IC43NzQgMjMuMiAwIDIyLjIyMiAwaC4wMDN6Ii8+PC9zdmc+)](https://www.linkedin.com/in/Asteriuz)
 [![E--mail](https://img.shields.io/badge/E--mail-222222?style=flat-square&logo=minutemailer&logoColor=FF3131)](mailto:gutocebola@gmail.com)
 
-<sub>Aberto a conversas sobre IA self-hosted, RAG e automação — ou sobre outros laboratórios caseiros.</sub>
+<i>Aberto a conversas sobre IA self-hosted, RAG e automação — ou sobre outros laboratórios caseiros.</i>
 
 </div>
 
@@ -201,7 +201,7 @@ Métricas por **usuário · modelo · dia**, extraídas direto do PostgreSQL do 
 
 <samp>✦ ────────────── ✧ ────────────── ✦</samp>
 
-<sub>Feito à mão, cometa por cometa — Python, Docker e café.</sub><br/>
-<sub>Se algo por aqui brilhou, deixe uma ⭐ — constelações se constroem juntas.</sub>
+<i>Feito à mão, cometa por cometa — Python, Docker e café.</i><br/>
+<i>Se algo por aqui brilhou, deixe uma ⭐ — constelações se constroem juntas.</i>
 
 </div>
