@@ -16,6 +16,8 @@
 
 </div>
 
+<div>&nbsp;</div>
+
 <div align="center"><samp>✦ ────────────── ✧ ────────────── ✦</samp></div>
 
 <div align="center">
@@ -25,6 +27,8 @@ e hoje levo essa base à órbita da IA, construindo cada laboratório de ponta a
 Cada projeto é um cometa — direção clara, rastro de código.
 
 </div>
+
+<div>&nbsp;</div>
 
 <h2 align="center"><img src="https://api.iconify.design/lucide/rocket.svg?color=%23FF3131&height=22" alt="" /> Projeto em destaque · AsteriuzLab</h2>
 
@@ -63,6 +67,8 @@ Cada projeto é um cometa — direção clara, rastro de código.
 
 </div>
 
+<div>&nbsp;</div>
+
 <div align="center">
 
 ```mermaid
@@ -76,6 +82,8 @@ flowchart LR
 
 </div>
 
+<div>&nbsp;</div>
+
 <div align="center"><img src="https://capsule-render.vercel.app/api?type=rect&color=0:222222,50:FF3131,100:222222&height=3&section=header" alt="" /><br/></div>
 
 <h2 align="center"><img src="https://api.iconify.design/lucide/puzzle.svg?color=%23FF3131&height=22" alt="" /> Áreas de atuação</h2>
@@ -84,7 +92,7 @@ flowchart LR
 
 <table>
 <tr>
-<td align="center" width="50%">
+<td align="center" width="50%" height="200">
 
 <img src="https://api.iconify.design/ph/stethoscope-duotone.svg?color=%23FF3131&height=38" alt="" />
 
@@ -93,7 +101,7 @@ flowchart LR
 API que transforma transcrições de consulta em **prontuários estruturados em PDF** — via Pipe do Open WebUI + Gotenberg.
 
 </td>
-<td align="center" width="50%">
+<td align="center" width="50%" height="200">
 
 <img src="https://api.iconify.design/ph/car-duotone.svg?color=%23EDEDED&height=38" alt="" />
 
@@ -104,7 +112,7 @@ Coleta automatizada de manuais em PDF, extração de fichas técnicas via LLM e 
 </td>
 </tr>
 <tr>
-<td align="center" width="50%">
+<td align="center" width="50%" height="200">
 
 <img src="https://api.iconify.design/ph/t-shirt-duotone.svg?color=%23FF3131&height=38" alt="" />
 
@@ -113,7 +121,7 @@ Coleta automatizada de manuais em PDF, extração de fichas técnicas via LLM e 
 Pipeline de **ingestão → extração → revisão** com LLM para catalogar sem digitar nada.
 
 </td>
-<td align="center" width="50%">
+<td align="center" width="50%" height="200">
 
 <img src="https://api.iconify.design/ph/coins-duotone.svg?color=%23EDEDED&height=38" alt="" />
 
@@ -124,6 +132,8 @@ Métricas por **usuário · modelo · dia**, extraídas direto do PostgreSQL do 
 </td>
 </tr>
 </table>
+
+<div>&nbsp;</div>
 
 <h2 align="center"><img src="https://api.iconify.design/lucide/wrench.svg?color=%23FFFFFF&height=22" alt="" /> Tech Stack</h2>
 
@@ -145,6 +155,8 @@ Métricas por **usuário · modelo · dia**, extraídas direto do PostgreSQL do 
 
 </div>
 
+<div>&nbsp;</div>
+
 <h2 align="center"><!-- TODO: substituir por img/icons/cometa-*.svg --><img src="https://api.iconify.design/lucide/orbit.svg?color=%23FF3131&height=22" alt="" /> Métricas em órbita</h2>
 
 <div align="center">
@@ -164,6 +176,8 @@ Métricas por **usuário · modelo · dia**, extraídas direto do PostgreSQL do 
 
 </div>
 
+<div>&nbsp;</div>
+
 <h2 align="center"><!-- TODO: substituir por img/icons/cometa-*.svg --><img src="https://api.iconify.design/lucide/sparkles.svg?color=%23FFFFFF&height=22" alt="" /> A cobra e as estrelas</h2>
 
 <div align="center">
@@ -181,6 +195,8 @@ Métricas por **usuário · modelo · dia**, extraídas direto do PostgreSQL do 
 
 </div>
 
+<div>&nbsp;</div>
+
 <h2 align="center"><img src="https://api.iconify.design/lucide/send.svg?color=%23FF3131&height=22" alt="" /> Como me encontrar</h2>
 
 <div align="center">
@@ -192,6 +208,8 @@ Métricas por **usuário · modelo · dia**, extraídas direto do PostgreSQL do 
 <i>Aberto a conversas sobre IA self-hosted, RAG e automação — ou sobre outros laboratórios caseiros.</i>
 
 </div>
+
+<div>&nbsp;</div>
 
 <div align="center">
 
