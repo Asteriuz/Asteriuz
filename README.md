@@ -20,6 +20,8 @@
 
 <div align="center"><samp>✦ ────────────── ✧ ────────────── ✦</samp></div>
 
+<div>&nbsp;</div>
+
 <div align="center">
 
 Sou o <b>Asteriuz</b>. Vim do universo <b>full stack</b> (Flutter · React · UI/UX)<br/>
