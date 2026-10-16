@@ -7,7 +7,7 @@
 
 <div align="center">
 
-<img src="img/LogoMark.svg" width="140" alt="Logo Asteriuz — cometa vermelho com estrela branca" />
+<p align="center"><img src="img/LogoMark.svg" width="140" alt="Logo Asteriuz — cometa vermelho com estrela branca" /></p>
 
 <img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&size=26&duration=2000&pause=1000&color=FF3131&center=true&vCenter=true&width=520&height=50&lines=%E2%9C%A6+Ol%C3%A1%2C+eu+sou+Asteriuz+%E2%9C%A6" alt="Saudação: Olá, eu sou Asteriuz" />
 
