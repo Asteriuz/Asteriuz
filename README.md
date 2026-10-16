@@ -7,10 +7,7 @@
 
 <div align="center">
 
-<!-- 🖼️ ✏️ EDITE (logo): envie o seu Pictorial.svg para “assets/pictorial.svg”
-     deste repositório. Se o nome/caminho ou a branch (main/master) for
-     diferente, ajuste o src abaixo. -->
-<img src="https://raw.githubusercontent.com/Asteriuz/Asteriuz/main/assets/pictorial.svg" width="140" alt="Logo Asteriuz — cometa vermelho com estrela branca" />
+<img src="img\LogoMark.svg" width="140" alt="Logo Asteriuz — cometa vermelho com estrela branca" />
 
 <img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&size=26&duration=2000&pause=1000&color=FF3131&center=true&vCenter=true&repeat=false&width=520&height=50&lines=%E2%9C%A6+Ol%C3%A1%2C+eu+sou+Asteriuz+%E2%9C%A6" alt="Saudação: Olá, eu sou Asteriuz" />
 
@@ -35,7 +32,8 @@ Cada projeto é um cometa — direção clara, rastro de código.
 
 <div align="center">
 
-<!-- ✏️ EDITE: quando o asteriuzLab ganhar repositório público, transforme o título acima em link. -->
+<img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&size=17&duration=3000&pause=1500&color=FF8585&center=true&vCenter=true&repeat=false&width=560&height=34&lines=Uma+VPS%2C+um+compose+up+—+e+o+laborat%C3%B3rio+no+ar" alt="Frase do projeto" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:222222,100:FF3131&height=3&section=header" />
 
 <img src="https://img.shields.io/badge/Docker-Compose-FF3131?style=flat-square&labelColor=222222&logo=docker&logoColor=white" alt="Docker Compose" />
 <img src="https://img.shields.io/badge/Python-uv-FF8585?style=flat-square&labelColor=222222&logo=python&logoColor=white" alt="Python com uv" />
@@ -48,36 +46,60 @@ Cada projeto é um cometa — direção clara, rastro de código.
 
 </div>
 
-<div align="center">
+<!-- ✏️ EDITE: quando o asteriuzLab ficar público, descomente o card abaixo — o pin do repo se torna o destaque visual da seção.
+<img src="https://github-readme-stats.vercel.app/api/pin/?username=Asteriuz&repo=asteriuzLab&bg_color=222222&title_color=FF3131&icon_color=FF8585&text_color=EDEDED&hide_border=true&locale=pt-BR" alt="asteriuzLab" />
+-->
 
-Stack de IA **self-hosted** rodando inteira em Docker Compose: **Open WebUI** no front,
-**LiteLLM** como gateway para o **OpenRouter**, **PostgreSQL** para dados e métricas,
-e **Tavily** trazendo a web para dentro da conversa.<br/>
-Operação via **just** e scripts Python gerenciados com **uv** · RAG com embeddings **Qwen3**.<br/>
-Pouca cerimônia, máximo controle.
+<div align="center">
+<table>
+<tr>
+<td align="center" width="50%">
+<samp><b>🌐 Open WebUI</b></samp><br/>
+<sub>front de chat com pipes customizados</sub>
+</td>
+<td align="center" width="50%">
+<samp><b>🛡️ LiteLLM</b></samp><br/>
+<sub>gateway único · logs · custos por modelo</sub>
+</td>
+</tr>
+<tr>
+<td align="center" width="50%">
+<samp><b>🔎 Tavily</b></samp><br/>
+<sub>busca web injetada na conversa</sub>
+</td>
+<td align="center" width="50%">
+<samp><b>🐘 PostgreSQL</b></samp><br/>
+<sub>métricas por usuário · modelo · dia</sub>
+</td>
+</tr>
+</table>
 
 </div>
 
-```
-    Usuário
-       │
-       ▼
-┌──────────────┐        ┌──────────────┐        ┌──────────────┐
-│  Open WebUI  │───────▶│    LiteLLM   │───────▶│  OpenRouter  │──▶ Modelos LLM
-│ chat · pipes │        │   gateway    │        │  (roteador)  │
-└──────┬───────┘        └──────┬───────┘        └──────────────┘
-       │                       │
-       │ RAG · busca web       │ logs · uso · custos
-       ▼                       ▼
-┌──────────────┐        ┌──────────────┐
-│    Tavily    │        │  PostgreSQL  │
-│  web search  │        │ dados · uso  │
-└──────────────┘        └──────────────┘
+<div align="center">
+
+```mermaid
+flowchart LR
+    U(["👤 Usuário"]) --> W
+    subgraph S[" "]
+        direction LR
+        W["🌐 Open WebUI<br/>chat · pipes"] --> L["🛡️ LiteLLM<br/>gateway"]
+        L --> R["🔀 OpenRouter"]
+        W -. "RAG · busca web" .-> T["🔎 Tavily"]
+        L -. "logs · custos" .-> P["🐘 PostgreSQL"]
+    end
+    R --> M["🧠 LLMs"]
+    style S fill:#222222,stroke:#FF3131,stroke-width:2px,color:#EDEDED
+    style W fill:#333333,stroke:#FF3131,color:#FFFFFF
+    style L fill:#333333,stroke:#FF8585,color:#FFFFFF
+    style R fill:#333333,stroke:#FF8585,color:#FFFFFF
+    style T fill:#333333,stroke:#FF3131,color:#FFFFFF
+    style P fill:#333333,stroke:#FF8585,color:#FFFFFF
 ```
 
-<div align="center">
-<sub>Uma VPS Linux, um <code>compose up</code> — e o laboratório inteiro no ar.</sub>
 </div>
+
+<div align="center"><img src="https://img.shields.io/badge/─────-222222?style=flat-square" alt="Divisória" /></div>
 
 <h2 align="center">🧩 Áreas de atuação</h2>
 
@@ -174,11 +196,10 @@ Métricas por **usuário · modelo · dia**, extraídas direto do PostgreSQL do 
 
 <div align="center">
 
-<!-- ✏️ EDITE: troque “SEU-USUARIO” e o e-mail de exemplo pelos seus dados reais. -->
 
 [![GitHub](https://img.shields.io/badge/GitHub-222222?style=flat-square&logo=github&logoColor=FF3131)](https://github.com/Asteriuz)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-222222?style=flat-square&logo=linkedin&logoColor=FFFFFF)](https://www.linkedin.com/in/SEU-USUARIO)
-[![E--mail](https://img.shields.io/badge/E--mail-222222?style=flat-square&logo=minutemailer&logoColor=FF3131)](mailto:seu-email@exemplo.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-222222?style=flat-square&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI0ZGMzEzMSIgZD0iTTIwLjQ0NyAyMC40NTJoLTMuNTU0di01LjU2OWMwLTEuMzI4LS4wMjctMy4wMzctMS44NTItMy4wMzctMS44NTMgMC0yLjEzNiAxLjQ0NS0yLjEzNiAyLjkzOXY1LjY2N0g5LjM1MVY5aDMuNDE0djEuNTYxaC4wNDZjLjQ3Ny0uOSAxLjYzNy0xLjg1IDMuMzctMS44NSAzLjYwMSAwIDQuMjY3IDIuMzcgNC4yNjcgNS40NTV2Ni4yODZ6TTUuMzM3IDcuNDMzYy0xLjE0NCAwLTIuMDYzLS45MjYtMi4wNjMtMi4wNjUgMC0xLjEzOC45Mi0yLjA2MyAyLjA2My0yLjA2MyAxLjE0IDAgMi4wNjQuOTI1IDIuMDY0IDIuMDYzIDAgMS4xMzktLjkyNSAyLjA2NS0yLjA2NCAyLjA2NXptMS43ODIgMTMuMDE5SDMuNTU1VjloMy41NjR2MTEuNDUyek0yMi4yMjUgMEgxLjc3MUMuNzkyIDAgMCAuNzc0IDAgMS43Mjl2MjAuNTQyQzAgMjMuMjI3Ljc5MiAyNCAxLjc3MSAyNGgyMC40NTFDMjMuMiAyNCAyNCAyMy4yMjcgMjQgMjIuMjcxVjEuNzI5QzI0IC43NzQgMjMuMiAwIDIyLjIyMiAwaC4wMDN6Ii8+PC9zdmc+)](https://www.linkedin.com/in/Asteriuz)
+[![E--mail](https://img.shields.io/badge/E--mail-222222?style=flat-square&logo=minutemailer&logoColor=FF3131)](mailto:gutocebola@gmail.com)
 
 <sub>Aberto a conversas sobre IA self-hosted, RAG e automação — ou sobre outros laboratórios caseiros.</sub>
 
