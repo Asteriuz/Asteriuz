@@ -42,12 +42,12 @@ Cada projeto é um cometa — direção clara, rastro de código.
 <img src="https://img.shields.io/badge/Python-uv-FF8585?style=for-the-badge&labelColor=222222&logo=python&logoColor=white" alt="Python com uv" />
 <img src="https://img.shields.io/badge/PostgreSQL-dados-FF3131?style=for-the-badge&labelColor=222222&logo=postgresql&logoColor=white" alt="PostgreSQL" />
 <br/>
-<img src="https://img.shields.io/badge/LiteLLM-gateway-FF8585?style=for-the-badge&labelColor=222222" alt="LiteLLM gateway" />
-<img src="https://img.shields.io/badge/Open_WebUI-interface-FF3131?style=for-the-badge&labelColor=222222" alt="Open WebUI" />
+<img src="https://img.shields.io/badge/LiteLLM-gateway-FF8585?style=for-the-badge&labelColor=222222&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48ZyBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIyIj48Y2lyY2xlIGN4PSI2IiBjeT0iMTkiIHI9IjMiLz48cGF0aCBkPSJNOSAxOWg4LjVhMy41IDMuNSAwIDAgMCAwLTdoLTExYTMuNSAzLjUgMCAwIDEgMC03SDE1Ii8+PGNpcmNsZSBjeD0iMTgiIGN5PSI1IiByPSIzIi8+PC9nPjwvc3ZnPg==" alt="LiteLLM gateway" />
+<img src="https://img.shields.io/badge/Open_WebUI-interface-FF3131?style=for-the-badge&labelColor=222222&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIyIiBkPSJNMTYgMTBhMiAyIDAgMCAxLTIgMkg2LjgyOGEyIDIgMCAwIDAtMS40MTQuNTg2bC0yLjIwMiAyLjIwMkEuNzEuNzEgMCAwIDEgMiAxNC4yODZWNGEyIDIgMCAwIDEgMi0yaDEwYTIgMiAwIDAgMSAyIDJ6bTQtMWEyIDIgMCAwIDEgMiAydjEwLjI4NmEuNzEuNzEgMCAwIDEtMS4yMTIuNTAybC0yLjIwMi0yLjIwMkEyIDIgMCAwIDAgMTcuMTcyIDE5SDEwYTIgMiAwIDAgMS0yLTJ2LTEiLz48L3N2Zz4=" alt="Open WebUI" />
 <img src="https://img.shields.io/badge/OpenRouter-modelos-FF8585?style=for-the-badge&labelColor=222222&logo=openrouter&logoColor=white" alt="OpenRouter" />
 <br/>
-<img src="https://img.shields.io/badge/Tavily-busca_web-FF3131?style=for-the-badge&labelColor=222222" alt="Tavily busca web" />
-<img src="https://img.shields.io/badge/just-runner-FF8585?style=for-the-badge&labelColor=222222" alt="just command runner" />
+<img src="https://img.shields.io/badge/Tavily-busca_web-FF3131?style=for-the-badge&labelColor=222222&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48ZyBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIyIj48cGF0aCBkPSJtMjEgMjFsLTQuMzQtNC4zNCIvPjxjaXJjbGUgY3g9IjExIiBjeT0iMTEiIHI9IjgiLz48L2c+PC9zdmc+" alt="Tavily busca web" />
+<img src="https://img.shields.io/badge/just-runner-FF8585?style=for-the-badge&labelColor=222222&logo=just&logoColor=white" alt="just command runner" />
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:222222,50:FF3131,100:222222&height=3&section=header" />
 
